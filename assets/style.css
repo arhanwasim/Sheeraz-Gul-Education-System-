@@ -1,0 +1,3983 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+:root{--green:#079180;--green-dark:#057264;--blue:#0b5085;--blue-2:#0c78bc;--ink:#16343b;--muted:#618292;--white:#fff;--aqua:#eaf8f4;--pale:#eef7fb;--line:#d7e8ed;--shadow:0 16px 42px rgba(11,80,133,.10);--radius:22px;--radius-sm:14px;--container:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'Poppins',Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.65}body.modal-open{overflow:hidden}img{max-width:100%;display:block}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}.container{width:min(var(--container),calc(100% - 40px));margin-inline:auto}.skip-link{position:absolute;left:-999px;top:10px;background:#fff;padding:10px 14px;z-index:9999;border-radius:8px}.skip-link:focus{left:10px}.site-header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.96);border-bottom:1px solid rgba(11,80,133,.08);backdrop-filter:blur(14px)}.nav-wrap{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand{display:flex;align-items:center;gap:12px;min-width:max-content}.brand img{width:58px;height:58px;object-fit:contain}.brand span{display:flex;flex-direction:column;line-height:1.12}.brand strong{font-size:1.02rem;color:var(--blue)}.brand small{font-size:.72rem;color:var(--green);font-weight:600}.main-nav{display:flex;align-items:center;gap:18px}.nav-links{display:flex;align-items:center;gap:4px}.nav-links a{font-size:.84rem;font-weight:600;padding:10px 11px;border-radius:10px;color:#284c55;transition:.2s}.nav-links a:hover,.nav-links a.active{color:var(--blue);background:var(--pale)}.menu-toggle{display:none;width:44px;height:44px;border:0;border-radius:12px;background:var(--pale);color:var(--blue)}.menu-toggle svg{width:22px;fill:none;stroke:currentColor;stroke-width:1.8}.btn{border:0;border-radius:12px;padding:12px 18px;display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:700;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}.btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8}.btn:hover{transform:translateY(-1px)}.btn-primary{background:var(--green);color:#fff;box-shadow:0 10px 26px rgba(7,145,128,.22)}.btn-primary:hover{background:var(--green-dark)}.btn-blue{background:var(--blue-2);color:#fff;box-shadow:0 10px 28px rgba(12,120,188,.18)}.btn-outline{background:#fff;color:var(--blue);border:1px solid #9fcce3}.btn-soft{background:var(--aqua);color:var(--green-dark)}.nav-donate{padding:11px 15px;font-size:.84rem}.eyebrow,.section-kicker{display:flex;align-items:center;gap:10px;color:var(--green);font-size:.76rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em}.eyebrow:before,.section-kicker:before{content:'';width:26px;height:2px;background:var(--green);border-radius:99px}.hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#fff 0 48%,#eaf8f4 48% 100%);min-height:620px;display:flex;align-items:center}.hero:before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 5% 0%,rgba(7,145,128,.12),transparent 30%),radial-gradient(circle at 88% 16%,rgba(12,120,188,.14),transparent 27%)}.hero-grid{position:relative;display:grid;grid-template-columns:1.04fr .96fr;align-items:center;gap:48px;padding:86px 0}.hero-copy h1{font-size:clamp(2.7rem,5vw,5rem);line-height:1.02;color:var(--blue);margin:.35rem 0 1rem;letter-spacing:-.045em}.hero-copy h1 span{display:block;color:var(--green)}.hero-copy p{font-size:1.15rem;color:#4a6971;max-width:650px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.hero-visual{position:relative}.hero-visual img{width:100%;height:500px;object-fit:cover;border-radius:32px;box-shadow:0 28px 70px rgba(11,80,133,.18)}.hero-badge{position:absolute;left:-26px;bottom:34px;background:#fff;border:1px solid #d8ecef;border-radius:18px;padding:18px 20px;box-shadow:var(--shadow);display:flex;align-items:center;gap:12px;max-width:250px}.hero-badge strong{display:block;color:var(--blue)}.hero-badge span{font-size:.8rem;color:var(--muted)}.hero-badge .icon-box{width:42px;height:42px;flex:0 0 42px}.section{padding:92px 0}.section-sm{padding:64px 0}.section-aqua{background:linear-gradient(180deg,#effaf8,#e9f7f5)}.section-blue{background:linear-gradient(180deg,#f4fbfe,#edf7fb)}.section-title{max-width:820px;margin-bottom:42px}.section-title.center{text-align:center;margin-inline:auto}.section-title h2{font-size:clamp(2rem,3.5vw,3.3rem);line-height:1.12;color:var(--blue);margin:.5rem 0 .8rem;letter-spacing:-.035em}.section-title p{color:var(--muted);margin:0}.split{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}.media-card{overflow:hidden;border-radius:28px;box-shadow:var(--shadow);background:#fff}.media-card img{width:100%;height:410px;object-fit:cover}.content-block h2{font-size:clamp(2rem,3vw,3.2rem);color:var(--blue);line-height:1.12;margin:.5rem 0 1rem}.content-block p{color:#4e7078}.content-block .lead{font-weight:600;color:#285763;font-size:1.03rem}.card-grid{display:grid;gap:20px}.card-grid.four{grid-template-columns:repeat(4,1fr)}.card-grid.three{grid-template-columns:repeat(3,1fr)}.card-grid.two{grid-template-columns:repeat(2,1fr)}.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 10px 30px rgba(19,78,94,.06);overflow:hidden}.campus-card{transition:transform .22s,box-shadow .22s}.campus-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.campus-card img{width:100%;height:205px;object-fit:cover}.campus-card-body{padding:22px}.campus-card .tag{color:var(--green);font-weight:800;font-size:.73rem;letter-spacing:.12em;text-transform:uppercase}.campus-card h3{font-size:1.25rem;color:var(--blue);margin:.35rem 0 .45rem}.campus-card p{font-size:.86rem;color:var(--muted);margin:0}.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.stat{padding:24px;background:#fff;border:1px solid var(--line);border-radius:18px}.stat strong{font-size:2rem;color:var(--blue);display:block;line-height:1}.stat span{font-size:.84rem;color:var(--muted)}.icon-card{padding:26px;min-height:245px;display:flex;flex-direction:column;justify-content:space-between}.icon-box{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,#f0fbf8,#eef9fd);border:1px solid #cbe9ec;display:grid;place-items:center;color:var(--green)}.icon-box svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.7}.icon-card h3{font-size:1.1rem;color:#102f38;margin:28px 0 7px}.icon-card p{font-size:.88rem;color:var(--muted);margin:0}.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}.profile-card{display:grid;grid-template-columns:220px 1fr;background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:var(--shadow)}.profile-card img{width:100%;height:100%;min-height:360px;object-fit:cover}.profile-content{padding:30px}.profile-content .role{font-size:.72rem;color:var(--green);text-transform:uppercase;letter-spacing:.12em;font-weight:800}.profile-content h3{font-size:1.5rem;color:var(--blue);margin:.25rem 0 .1rem}.profile-content small{color:var(--muted)}.profile-content p{font-size:.9rem;color:#4b6a72}.profile-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.faq-list{display:grid;gap:14px}.faq-item{border:1px solid #bfe4e1;border-radius:18px;background:#fff;overflow:hidden}.faq-button{width:100%;padding:22px 24px;background:#fff;border:0;display:flex;justify-content:space-between;align-items:center;text-align:left;font-weight:700;color:var(--blue)}.faq-plus{font-size:1.8rem;line-height:1;color:var(--green);transition:.2s}.faq-answer{display:grid;grid-template-rows:0fr;transition:.25s}.faq-answer>div{overflow:hidden}.faq-answer p{padding:0 24px 22px;margin:0;color:var(--muted)}.faq-item.open .faq-answer{grid-template-rows:1fr}.faq-item.open .faq-plus{transform:rotate(45deg)}.contact-layout{display:grid;grid-template-columns:.72fr 1.28fr;gap:22px}.info-stack{display:grid;gap:14px}.info-card{padding:24px;background:#fff;border:1px solid var(--line);border-radius:20px}.info-card h3{margin:0 0 6px;color:var(--blue);font-size:1rem}.info-card p,.info-card a{font-size:.85rem;color:var(--muted)}.info-card a{color:var(--blue);font-weight:600}.contact-form-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px}.contact-form-card h2{font-size:2rem;color:var(--blue);margin:.35rem 0 1.1rem}.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.form-grid label{font-size:.73rem;font-weight:700;color:#113f59;display:grid;gap:7px}.form-grid input,.form-grid select,.form-grid textarea{width:100%;border:1px solid #b8d8e6;border-radius:10px;padding:12px 13px;background:#fbfdfe;color:#18343a;outline:none}.form-grid input:focus,.form-grid select:focus,.form-grid textarea:focus{border-color:var(--blue-2);box-shadow:0 0 0 3px rgba(12,120,188,.1)}.form-span-2{grid-column:1/-1}.form-status{font-size:.82rem;color:var(--green-dark);min-height:1.2em}.page-hero{position:relative;min-height:360px;display:flex;align-items:center;overflow:hidden;background:linear-gradient(90deg,rgba(4,47,75,.94),rgba(11,80,133,.72)),url('images/school-hero.jpg') center/cover no-repeat;color:#fff}.page-hero:after{content:'';position:absolute;right:-8%;top:-60%;width:520px;height:520px;border:1px solid rgba(255,255,255,.22);border-radius:50%;box-shadow:0 0 0 46px rgba(255,255,255,.04),0 0 0 92px rgba(255,255,255,.03)}.page-hero .container{position:relative;z-index:1}.page-hero .eyebrow{color:#d9efff}.page-hero .eyebrow:before{background:#fff}.page-hero h1{font-size:clamp(2.7rem,5vw,4.6rem);line-height:1;margin:.5rem 0 .8rem;letter-spacing:-.04em}.page-hero p{max-width:700px;color:#ebf8fb;font-size:1.04rem}.bank-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.bank-card{background:#fff;border:1px solid #cbe3ec;border-radius:20px;padding:22px;position:relative}.bank-card h3{color:var(--blue);font-size:1rem;margin:.5rem 0 .2rem}.bank-card small{display:block;color:var(--muted);min-height:42px}.bank-card code{display:block;margin:18px 0 14px;color:#0b5085;font-weight:700;font-family:inherit;word-break:break-all}.bank-card .copy-btn{border:0;background:var(--pale);color:var(--blue);padding:9px 12px;border-radius:10px;font-weight:700;display:inline-flex;gap:7px;align-items:center}.bank-card .copy-btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8}.donation-panel{background:#fff;border:1px solid var(--line);border-radius:26px;padding:32px;box-shadow:var(--shadow)}.ways-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.way-card{padding:28px;text-align:center;background:#fff;border-radius:20px;border:1px solid var(--line)}.way-card .icon-box{margin:0 auto}.way-card h3{color:var(--blue)}.way-card p{font-size:.88rem;color:var(--muted)}.steps{counter-reset:step;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px}.step:before{counter-increment:step;content:counter(step,decimal-leading-zero);display:block;font-size:2rem;color:var(--green);font-weight:800}.step h3{color:var(--blue);font-size:1rem}.step p{font-size:.86rem;color:var(--muted)}.portal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.portal-card{border-radius:22px;border:1px solid var(--line);overflow:hidden;background:#fff}.portal-card-head{background:linear-gradient(100deg,var(--blue),var(--blue-2));color:#fff;padding:20px 24px}.portal-card-head h3{margin:0;text-align:center}.portal-card-body{padding:22px}.portal-meta{display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;font-size:.82rem;color:var(--muted);margin-bottom:20px}.portal-actions{display:flex;justify-content:space-between;gap:12px}.campus-detail{margin-top:16px;padding:14px 16px;background:var(--aqua);border-radius:12px;color:var(--green-dark);font-size:.84rem}.campus-detail[hidden]{display:none}.admission-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.benefit-card{padding:28px;background:#fff;border:1px solid var(--line);border-radius:22px}.benefit-card .num{font-size:2rem;color:var(--green);font-weight:800}.benefit-card h3{color:var(--blue)}.benefit-card p{font-size:.88rem;color:var(--muted)}.footer-grid{display:grid;grid-template-columns:1.45fr .75fr 1fr;gap:44px;padding:60px 0 40px}.site-footer{background:#0a3348;color:#dceef5;margin-top:0}.footer-brand{display:flex;gap:18px}.footer-brand img{width:76px;height:76px}.footer-brand h3{margin:0 0 8px;color:#fff}.footer-brand p{font-size:.84rem;color:#b9d4df}.site-footer h4{color:#fff;margin:0 0 14px}.footer-links{display:grid;gap:8px}.footer-links a,.footer-contact a{font-size:.82rem;color:#c1dbe5}.footer-links a:hover,.footer-contact a:hover{color:#fff}.footer-contact{display:grid;gap:10px}.footer-contact a{display:flex;gap:9px;align-items:flex-start}.footer-contact svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;flex:0 0 17px}.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding:18px 0 24px;display:flex;justify-content:space-between;gap:20px;font-size:.75rem;color:#9fbfcb}.whatsapp-float{position:fixed;right:20px;bottom:20px;z-index:800;width:54px;height:54px;border-radius:50%;background:#14a06f;color:#fff;display:grid;place-items:center;box-shadow:0 14px 30px rgba(20,160,111,.25)}.whatsapp-float svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8}.modal[hidden]{display:none}.modal{position:fixed;inset:0;z-index:2000;display:grid;place-items:center;padding:22px}.modal-backdrop{position:absolute;inset:0;background:rgba(4,27,41,.65);backdrop-filter:blur(4px)}.modal-panel{position:relative;z-index:1;width:min(920px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:26px;padding:34px;box-shadow:0 28px 90px rgba(0,0,0,.25);outline:none}.modal-close{position:absolute;right:18px;top:16px;width:38px;height:38px;border-radius:50%;border:0;background:#eef7fb;color:var(--blue);font-size:1.45rem}.modal-panel h2{font-size:2rem;color:var(--blue);margin:.4rem 0 .3rem}.modal-intro{color:var(--muted);font-size:.88rem;margin:0 0 20px}.mini-bank-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.mini-bank-grid>div{border:1px solid var(--line);border-radius:14px;padding:12px}.mini-bank-grid strong,.mini-bank-grid small,.mini-bank-grid code{display:block}.mini-bank-grid strong{color:var(--blue);font-size:.82rem}.mini-bank-grid small{color:var(--muted);font-size:.67rem}.mini-bank-grid code{font-family:inherit;font-weight:700;font-size:.72rem;color:var(--blue);margin-top:8px;word-break:break-all}.compact-bank-list h3{color:var(--blue);margin:.2rem 0 .5rem}.notice{padding:18px 20px;border-radius:14px;background:#fff7e8;border:1px solid #f0ddb1;color:#745b2e;font-size:.84rem}.prose{max-width:820px}.prose h2,.prose h3{color:var(--blue)}.prose p{color:#4b6971}.pill-list{display:flex;gap:10px;flex-wrap:wrap}.pill{padding:8px 12px;border-radius:999px;background:var(--aqua);color:var(--green-dark);font-size:.78rem;font-weight:700}.divider{height:1px;background:var(--line);margin:28px 0}.upload-note{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:.8rem}.upload-note svg{width:18px;height:18px;fill:none;stroke:var(--green);stroke-width:1.8}.login-card{max-width:520px;margin:auto}.login-card .form-grid{grid-template-columns:1fr}
+@media(max-width:1050px){.nav-links{gap:0}.nav-links a{font-size:.78rem;padding:9px 7px}.hero-grid{gap:28px}.card-grid.four{grid-template-columns:repeat(2,1fr)}.team-grid{grid-template-columns:1fr}.bank-grid,.ways-grid,.steps{grid-template-columns:repeat(2,1fr)}.profile-card{grid-template-columns:190px 1fr}.portal-grid{grid-template-columns:1fr}}
+@media(max-width:860px){.menu-toggle{display:grid;place-items:center}.main-nav{display:none;position:absolute;left:20px;right:20px;top:74px;background:#fff;padding:18px;border-radius:18px;box-shadow:var(--shadow);border:1px solid var(--line);align-items:stretch}.main-nav.open{display:grid}.nav-links{display:grid}.nav-links a{padding:11px}.nav-donate{width:100%}.hero{min-height:auto}.hero-grid{grid-template-columns:1fr;padding:58px 0}.hero-visual{order:-1}.hero-visual img{height:360px}.hero-badge{left:12px}.split,.contact-layout{grid-template-columns:1fr}.media-card img{height:340px}.card-grid.three,.admission-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}.page-hero{min-height:300px}.profile-card{grid-template-columns:170px 1fr}.mini-bank-grid{grid-template-columns:1fr}.stat-row{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:620px){.container{width:min(100% - 28px,var(--container))}.nav-wrap{min-height:72px}.brand img{width:48px;height:48px}.brand strong{font-size:.92rem}.brand small{font-size:.65rem}.section{padding:68px 0}.section-sm{padding:48px 0}.hero-copy h1{font-size:2.7rem}.hero-copy p{font-size:1rem}.hero-visual img{height:280px;border-radius:22px}.hero-badge{position:static;margin-top:12px;max-width:none}.card-grid.four,.card-grid.three,.card-grid.two,.bank-grid,.ways-grid,.steps,.admission-grid{grid-template-columns:1fr}.stat-row{grid-template-columns:1fr}.profile-card{grid-template-columns:1fr}.profile-card img{height:360px;min-height:0}.form-grid{grid-template-columns:1fr}.form-span-2{grid-column:1}.portal-meta{grid-template-columns:1fr}.portal-actions{flex-direction:column}.footer-grid{grid-template-columns:1fr}.footer-brand{grid-column:auto}.footer-bottom{flex-direction:column}.modal{padding:10px}.modal-panel{padding:26px 18px;border-radius:20px}.contact-form-card,.donation-panel{padding:22px}.page-hero h1{font-size:2.7rem}.site-footer{padding-bottom:54px}}
+
+/* Final professional UI refinements */
+.brand{gap:10px}.brand img{width:52px;height:52px}.brand .brand-name{font-size:.98rem;line-height:1.2;white-space:nowrap;color:var(--blue);font-weight:700;letter-spacing:-.01em}
+.menu-toggle{border:1px solid var(--line);background:#fff;border-radius:10px}.menu-toggle svg{width:21px;height:21px}
+.btn{min-height:44px;border-radius:9px;padding:11px 17px;box-shadow:none;transform:none;transition:background-color .18s ease,border-color .18s ease,color .18s ease}.btn:hover{transform:none}.btn-primary{background:var(--green);box-shadow:none}.btn-primary:hover{background:var(--green-dark)}.btn-blue{background:var(--blue);box-shadow:none}.btn-blue:hover{background:#083f69}.btn-outline{border:1px solid #8fc0d8;background:#fff}.btn-outline:hover{border-color:var(--blue);background:#f7fbfd}.btn-soft{background:#f3faf8;border:1px solid #cfe9e2;color:var(--green-dark)}.btn-soft:hover{background:#eaf7f3}.nav-donate{padding-inline:18px;border:1px solid var(--green-dark);font-weight:700}.btn svg,.copy-btn svg,.icon-box svg,.footer-contact svg,.whatsapp-float svg{transition:none!important;animation:none!important}
+.icon-box{background:#f7fbfc;border-color:#cfe5ea;border-radius:12px}.icon-card,.campus-card{transition:none}.campus-card:hover{transform:none;box-shadow:0 12px 34px rgba(19,78,94,.08)}
+.prefooter-cta{padding:34px 0;background:linear-gradient(90deg,#eef9f6,#f3f9fc);border-top:1px solid #d9ecec;border-bottom:1px solid #d9ecec}.prefooter-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:28px}.prefooter-cta-copy{max-width:760px}.prefooter-cta-label{display:block;color:var(--green);font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;margin-bottom:5px}.prefooter-cta p{margin:0;color:#355d66;font-size:1rem;font-weight:500}.btn-cta{background:var(--blue);color:#fff;border:1px solid var(--blue);min-width:140px}.btn-cta:hover{background:#083f69;border-color:#083f69}.prefooter-cta .btn svg{width:16px;height:16px}
+@media(max-width:980px){.brand .brand-name{font-size:.9rem}.nav-wrap{gap:14px}}
+@media(max-width:760px){.brand img{width:46px;height:46px}.brand .brand-name{font-size:.8rem;white-space:normal;max-width:180px}.prefooter-cta{padding:28px 0}.prefooter-cta-inner{align-items:flex-start;flex-direction:column;gap:16px}.btn-cta{width:100%}}
+@media(max-width:760px){.brand .brand-name{font-size:.69rem;white-space:nowrap;max-width:none;letter-spacing:-.015em}}
+
+
+/* Final leadership refinement: compact professional cards with inline expandable messages */
+.leadership-compact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start}
+.leadership-compact-card{background:#fff;border:1px solid #d7e5ec;border-radius:20px;overflow:hidden;box-shadow:0 12px 34px rgba(15,68,94,.08)}
+.leadership-compact-top{display:grid;grid-template-columns:150px 1fr;min-height:220px}
+.leadership-compact-top>img{width:150px;height:220px;object-fit:cover;object-position:center top}
+.leadership-compact-copy{padding:24px;display:flex;flex-direction:column;align-items:flex-start}
+.leadership-compact-copy .role{font-size:.7rem;color:var(--green);text-transform:uppercase;letter-spacing:.12em;font-weight:800}
+.leadership-compact-copy h3{font-size:1.35rem;color:var(--blue);margin:.3rem 0 .15rem}
+.leadership-compact-copy small{color:var(--muted);font-size:.78rem}
+.leadership-compact-copy p{font-size:.86rem;color:#4b6971;margin:.85rem 0 1rem}
+.read-more-btn{margin-top:auto;padding:9px 14px;min-height:40px;font-size:.82rem}
+.leadership-details{border-top:1px solid #e0ebf0;padding:24px;background:#fbfdfe}
+.leadership-details[hidden]{display:none}
+.leadership-details h4{margin:0 0 12px;color:var(--blue);font-size:1rem}
+.leadership-details p{margin:.7rem 0;color:#4a6871;font-size:.87rem;line-height:1.7}
+.leadership-contact-note{padding-top:10px;border-top:1px solid #e2ebef}
+.page-hero{background-color:#0b5085}
+.whatsapp-float{display:none!important}
+@media(max-width:900px){.leadership-compact-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.leadership-compact-top{grid-template-columns:1fr}.leadership-compact-top>img{width:100%;height:300px}.leadership-compact-copy{padding:20px}.leadership-details{padding:20px}}
+
+
+/* Banner image-only refinement: remove blue/green overlay from internal page banners */
+.page-hero{
+  background:url('images/school-hero.jpg') center 48%/cover no-repeat;
+  background-color:#fff;
+  color:var(--blue);
+}
+.page-hero:after{display:none!important;content:none!important}
+.page-hero .container{position:relative;z-index:1}
+.page-hero .eyebrow{color:var(--green);text-shadow:0 1px 10px rgba(255,255,255,.95)}
+.page-hero .eyebrow:before{background:var(--green)}
+.page-hero h1{color:var(--blue);text-shadow:0 1px 0 #fff,0 0 18px rgba(255,255,255,.95)}
+.page-hero p{color:#173f58;font-weight:500;text-shadow:0 1px 0 #fff,0 0 16px rgba(255,255,255,.95)}
+
+/* =========================
+   Client refinement — 24 Sep 2026
+   Unified banner, compact controls, bank branding and layout polish
+   ========================= */
+
+/* Smaller, professional buttons across the site */
+.btn{
+  min-height:40px;
+  padding:9px 14px;
+  border-radius:8px;
+  font-size:.82rem;
+  gap:7px;
+}
+.btn svg{width:15px;height:15px}
+.nav-donate{padding:9px 14px;font-size:.8rem}
+.copy-btn{font-size:.8rem;padding:8px 11px!important}
+
+/* One supplied banner across Home -> Contact, with no color shade/overlay */
+.page-hero,
+.home-page-hero{
+  min-height:460px;
+  background-image:url('images/site-banner.png')!important;
+  background-size:cover!important;
+  background-position:center!important;
+  background-repeat:no-repeat!important;
+  background-color:#fff!important;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  overflow:hidden;
+}
+.page-hero:before,
+.page-hero:after,
+.home-page-hero:before,
+.home-page-hero:after{display:none!important;content:none!important}
+.page-hero .container,
+.page-hero-content{
+  position:relative;
+  z-index:2;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  max-width:840px;
+}
+.page-hero .eyebrow,
+.page-hero h1,
+.page-hero p,
+.home-page-hero .eyebrow,
+.home-page-hero h1,
+.home-page-hero p{
+  color:#fff!important;
+  text-align:center;
+  text-shadow:0 2px 3px rgba(2,35,61,.95),0 8px 24px rgba(2,35,61,.72);
+}
+.page-hero .eyebrow:before,
+.home-page-hero .eyebrow:before{background:#fff!important}
+.page-hero h1,
+.home-page-hero h1{
+  font-size:clamp(2.6rem,5vw,4.5rem);
+  line-height:1.05;
+  margin:.45rem 0 .75rem;
+  letter-spacing:-.04em;
+}
+.page-hero p,
+.home-page-hero p{
+  max-width:720px;
+  margin:0 auto;
+  font-size:1.02rem;
+  font-weight:600;
+}
+.hero-actions-center{justify-content:center;margin-top:24px}
+.btn-banner-secondary{background:#fff;color:var(--blue);border:1px solid rgba(255,255,255,.9)}
+.btn-banner-secondary:hover{background:#f4fbff;border-color:#fff}
+
+/* Make campus summary stat cards more compact on Home and About */
+.stat-row{gap:12px;margin-top:22px}
+.stat{padding:16px 20px;border-radius:14px;min-height:92px;display:flex;flex-direction:column;justify-content:center}
+.stat strong{font-size:1.5rem;line-height:1.08}
+.stat span{font-size:.78rem;margin-top:5px}
+
+/* Curriculum / feature cards: subtle professional hover */
+.icon-card{transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.icon-card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(11,80,133,.11);border-color:#b9dae7}
+
+/* Real bank branding replaces generic bank glyphs */
+.bank-logo-wrap{
+  width:76px;
+  height:54px;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  margin-bottom:10px;
+}
+.bank-logo{
+  width:auto;
+  height:48px;
+  max-width:110px;
+  object-fit:contain;
+  object-position:left center;
+}
+.bank-logo-habib{height:52px;max-width:90px}
+.bank-logo-sindh{height:40px;max-width:120px}
+.bank-card{padding:20px}
+.bank-card h3{margin:.35rem 0 .2rem}
+
+/* Donation sequence polish */
+.steps{gap:14px}
+.step{padding:20px;border-radius:16px}
+.step:before{font-size:1.65rem}
+.way-card{padding:24px}
+.donation-panel{padding:28px}
+
+/* Apply for job modal + CTA */
+.job-apply-cta .section-title{margin-bottom:0}
+.job-apply-cta .btn{margin-top:10px}
+.job-modal-panel{width:min(980px,100%)}
+.consent-row{display:flex!important;grid-template-columns:auto 1fr!important;align-items:start;gap:10px}
+.consent-row input{width:auto!important;margin-top:4px}
+.job-campus-grid .campus-card img{height:180px}
+.job-campus-grid .campus-card-body{padding:16px 18px}
+
+/* Keep pre-footer CTA compact */
+.prefooter-cta{padding:28px 0}
+.prefooter-cta p{font-size:.94rem}
+.btn-cta{min-width:124px}
+
+@media(max-width:860px){
+  .page-hero,.home-page-hero{min-height:390px;background-position:63% center!important}
+  .page-hero .container,.page-hero-content{max-width:680px}
+  .page-hero h1,.home-page-hero h1{font-size:clamp(2.3rem,8vw,3.7rem)}
+  .page-hero p,.home-page-hero p{font-size:.95rem}
+}
+@media(max-width:620px){
+  .page-hero,.home-page-hero{min-height:430px;background-position:70% center!important}
+  .page-hero .container,.page-hero-content{padding-inline:14px}
+  .page-hero h1,.home-page-hero h1{font-size:2.35rem}
+  .hero-actions-center{width:100%;gap:9px}
+  .hero-actions-center .btn{flex:1;min-width:0}
+  .bank-logo-wrap{width:70px;height:48px}.bank-logo{height:42px}
+  .stat{min-height:80px;padding:14px 16px}.stat strong{font-size:1.35rem}
+}
+
+
+/* =========================
+   Final banner + portal refinement — 24 Sep 2026
+   ========================= */
+/* New client-supplied banner across every page; no overlay / shade */
+.page-hero,
+.home-page-hero{
+  background-image:url('images/site-banner.png')!important;
+  background-size:cover!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+  background-color:#fff!important;
+  min-height:460px;
+  justify-content:flex-start!important;
+}
+.page-hero:before,.page-hero:after,.home-page-hero:before,.home-page-hero:after{
+  display:none!important;
+  content:none!important;
+  background:none!important;
+}
+.page-hero .container,
+.page-hero-content{
+  width:min(var(--container),calc(100% - 40px));
+  max-width:none!important;
+  margin-inline:auto;
+  align-items:flex-start!important;
+  justify-content:center!important;
+  text-align:left!important;
+}
+.page-hero .eyebrow,
+.page-hero h1,
+.page-hero p,
+.home-page-hero .eyebrow,
+.home-page-hero h1,
+.home-page-hero p{
+  text-align:left!important;
+  color:#fff!important;
+  max-width:640px;
+  text-shadow:0 2px 4px rgba(0,36,64,.92),0 8px 26px rgba(0,36,64,.68)!important;
+}
+.page-hero .eyebrow,
+.home-page-hero .eyebrow{justify-content:flex-start!important}
+.hero-actions-center{
+  justify-content:flex-start!important;
+  margin-top:22px;
+}
+
+/* School Portal — professional 2×2 campus-card design */
+.portal-section{background:linear-gradient(180deg,#f7fdfc 0%,#edf9f7 100%)}
+.portal-school-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:24px;
+  max-width:1060px;
+  margin:0 auto;
+}
+.portal-school-card{
+  background:#fff;
+  border:1px solid #d9e8ed;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 12px 34px rgba(15,68,94,.08);
+  transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease;
+}
+.portal-school-card:hover,
+.portal-school-card:focus-within{
+  border-color:#51b8a6;
+  box-shadow:0 16px 42px rgba(7,145,128,.15),0 0 0 3px rgba(7,145,128,.06);
+  transform:translateY(-3px);
+}
+.portal-school-photo{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+  display:block;
+  background:#eef8fa;
+}
+.portal-school-content{padding:22px 22px 20px}
+.portal-school-content h3{
+  margin:0 0 7px;
+  color:var(--blue);
+  font-size:1.35rem;
+  line-height:1.25;
+}
+.portal-school-content p{
+  margin:0;
+  color:var(--muted);
+  font-size:.86rem;
+}
+.portal-school-actions{
+  display:flex;
+  gap:10px;
+  margin-top:20px;
+}
+.portal-school-actions .btn{flex:1}
+.portal-school-card .campus-detail{
+  margin-top:14px;
+  font-size:.8rem;
+  line-height:1.55;
+}
+
+@media(max-width:860px){
+  .page-hero,.home-page-hero{background-position:center center!important;min-height:400px}
+  .page-hero .container,.page-hero-content{width:min(var(--container),calc(100% - 34px));align-items:flex-start!important;text-align:left!important}
+  .portal-school-grid{grid-template-columns:1fr;max-width:680px}
+}
+@media(max-width:620px){
+  .page-hero,.home-page-hero{min-height:420px;background-position:center center!important}
+  .page-hero .container,.page-hero-content{width:calc(100% - 28px);padding-inline:0!important}
+  .page-hero h1,.home-page-hero h1{font-size:2.25rem}
+  .page-hero p,.home-page-hero p{font-size:.94rem;max-width:92%}
+  .hero-actions-center{width:auto!important;gap:8px}
+  .hero-actions-center .btn{flex:0 0 auto!important}
+  .portal-school-photo{height:210px}
+  .portal-school-content{padding:18px}
+  .portal-school-actions{flex-direction:row}
+}
+
+/* =========================
+   Final clarity + banner typography refinement — 24 Sep 2026
+   ========================= */
+/* Banner copy sits clearly toward the left, at a calmer editorial scale. */
+.page-hero,
+.home-page-hero{
+  min-height:430px!important;
+}
+.page-hero .container,
+.page-hero-content{
+  width:100%!important;
+  max-width:none!important;
+  margin:0!important;
+  padding-left:clamp(24px,4.5vw,72px)!important;
+  padding-right:clamp(20px,4vw,60px)!important;
+  align-items:flex-start!important;
+  text-align:left!important;
+}
+.page-hero .eyebrow,
+.home-page-hero .eyebrow{
+  max-width:520px!important;
+  font-size:.68rem!important;
+  letter-spacing:.12em!important;
+  margin-bottom:4px!important;
+}
+.page-hero h1,
+.home-page-hero h1{
+  max-width:560px!important;
+  font-size:clamp(2.25rem,4vw,3.45rem)!important;
+  line-height:1.04!important;
+  letter-spacing:-.035em!important;
+  margin:.32rem 0 .62rem!important;
+}
+.page-hero p,
+.home-page-hero p{
+  max-width:540px!important;
+  font-size:.9rem!important;
+  line-height:1.5!important;
+  font-weight:600!important;
+  margin:0!important;
+}
+.home-page-hero .hero-actions-center{
+  margin-top:17px!important;
+}
+
+/* Preserve the supplied campus photography sharply at card scale. */
+.campus-card img,
+.portal-school-photo,
+.job-campus-grid .campus-card img{
+  image-rendering:auto;
+  backface-visibility:hidden;
+  transform:translateZ(0);
+}
+.portal-school-photo{
+  height:230px!important;
+  object-position:center center;
+}
+
+@media(max-width:860px){
+  .page-hero,.home-page-hero{min-height:380px!important}
+  .page-hero .container,.page-hero-content{
+    padding-left:clamp(20px,5vw,38px)!important;
+    padding-right:24px!important;
+  }
+  .page-hero h1,.home-page-hero h1{font-size:clamp(2rem,7vw,2.85rem)!important;max-width:480px!important}
+  .page-hero p,.home-page-hero p{font-size:.86rem!important;max-width:460px!important}
+}
+@media(max-width:620px){
+  .page-hero,.home-page-hero{min-height:390px!important}
+  .page-hero .container,.page-hero-content{padding-left:20px!important;padding-right:18px!important}
+  .page-hero .eyebrow,.home-page-hero .eyebrow{font-size:.62rem!important}
+  .page-hero h1,.home-page-hero h1{font-size:2rem!important;max-width:340px!important}
+  .page-hero p,.home-page-hero p{font-size:.82rem!important;line-height:1.45!important;max-width:355px!important}
+  .portal-school-photo{height:205px!important}
+}
+
+/* =========================
+   Final campus photo fidelity + Home fold refinement — 25 Sep 2026
+   Uses the exact client-supplied campus imagery without artificial filters.
+   ========================= */
+.portal-school-grid{
+  max-width:920px;
+}
+.portal-school-photo{
+  height:190px!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  filter:none!important;
+  transform:none!important;
+  image-rendering:auto!important;
+}
+
+/* Admission inquiry photo: preserve the supplied image at its native aspect ratio. */
+body[data-page="admission"] .section-aqua .media-card{
+  box-shadow:var(--shadow);
+}
+body[data-page="admission"] .section-aqua .media-card img[src*="admission-campus-pirbhu"]{
+  width:100%!important;
+  height:auto!important;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  filter:none!important;
+  transform:none!important;
+  image-rendering:auto!important;
+}
+
+/* Keep the Home hero as the complete first-screen experience so About begins lower. */
+body[data-page="home"] .home-page-hero{
+  min-height:calc(100svh - 82px)!important;
+}
+
+@media(max-width:860px){
+  .portal-school-grid{max-width:680px}
+  .portal-school-photo{height:205px!important}
+  body[data-page="home"] .home-page-hero{min-height:calc(100svh - 74px)!important}
+}
+@media(max-width:620px){
+  .portal-school-photo{height:190px!important}
+  body[data-page="home"] .home-page-hero{min-height:520px!important}
+}
+
+
+/* ===== Exact image sharpness fix — 25 Sep 2026 ===== */
+.portal-school-photo{
+  width:100%!important;
+  height:auto!important;
+  aspect-ratio:280 / 186!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  filter:none!important;
+  transform:none!important;
+  image-rendering:-webkit-optimize-contrast;
+  image-rendering:high-quality;
+}
+body[data-page="admission"] .section-aqua .media-card img{
+  width:100%!important;
+  height:auto!important;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  filter:none!important;
+  transform:none!important;
+  image-rendering:-webkit-optimize-contrast;
+  image-rendering:high-quality;
+}
+
+
+/* ===== Final exact campus image setting fix ===== */
+body[data-page="portal"] .portal-school-grid{max-width:980px!important;}
+body[data-page="portal"] .portal-school-photo{
+  width:100%!important;
+  height:220px!important;
+  aspect-ratio:auto!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  image-rendering:auto!important;
+  filter:none!important;
+}
+body[data-page="admission"] .section-aqua .media-card{overflow:hidden!important;}
+body[data-page="admission"] .section-aqua .media-card img{
+  width:100%!important;
+  height:420px!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  aspect-ratio:auto!important;
+  image-rendering:auto!important;
+  filter:none!important;
+}
+@media(max-width:860px){
+  body[data-page="portal"] .portal-school-photo{height:205px!important;}
+  body[data-page="admission"] .section-aqua .media-card img{height:auto!important;max-height:none!important;}
+}
+
+
+/* ===== Real campus banner final replacement ===== */
+.page-hero,
+.home-page-hero{
+  background-image:url('images/school-hero.jpg')!important;
+  background-size:cover!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+}
+.page-hero{
+  min-height:360px!important;
+}
+.home-page-hero{
+  min-height:430px!important;
+}
+/* Remove artificial overlays/shadows from banner image */
+.page-hero:before,
+.page-hero:after,
+.home-page-hero:before,
+.home-page-hero:after{
+  display:none!important;
+  content:none!important;
+}
+/* Keep text readable without making image look artificial */
+.page-hero .container,
+.home-page-hero .container{
+  position:relative!important;
+  z-index:2!important;
+}
+.page-hero h1,
+.home-page-hero h1{
+  text-shadow:0 2px 8px rgba(0,0,0,.35)!important;
+}
+.page-hero p,
+.home-page-hero p{
+  text-shadow:0 1px 6px rgba(0,0,0,.25)!important;
+}
+
+
+/* ===== Page banner size refinement ===== */
+/* Donation to Contact pages: slightly taller natural hero banner */
+body[data-page="donation"] .page-hero,
+body[data-page="about"] .page-hero,
+body[data-page="job"] .page-hero,
+body[data-page="admission"] .page-hero,
+body[data-page="portal"] .page-hero,
+body[data-page="contact"] .page-hero{
+  min-height:430px!important;
+}
+@media(max-width:860px){
+ body[data-page="donation"] .page-hero,
+ body[data-page="about"] .page-hero,
+ body[data-page="job"] .page-hero,
+ body[data-page="admission"] .page-hero,
+ body[data-page="portal"] .page-hero,
+ body[data-page="contact"] .page-hero{
+   min-height:390px!important;
+ }
+}
+
+/* ==========================================================
+   V27 — unified client-supplied campus banner + copy placement
+   ========================================================== */
+.page-hero,
+.home-page-hero{
+  background-image:url('images/school-hero.jpg')!important;
+  background-size:cover!important;
+  background-repeat:no-repeat!important;
+  background-position:center 46%!important;
+  min-height:440px!important;
+  position:relative!important;
+  display:flex!important;
+  align-items:center!important;
+  overflow:hidden!important;
+  background-color:#eef8fb!important;
+}
+
+/* A restrained readability fade, not an artificial colour overlay. */
+.page-hero::before,
+.home-page-hero::before{
+  display:block!important;
+  content:""!important;
+  position:absolute!important;
+  inset:0!important;
+  z-index:0!important;
+  pointer-events:none!important;
+  background:linear-gradient(90deg,
+    rgba(255,255,255,.97) 0%,
+    rgba(255,255,255,.93) 22%,
+    rgba(255,255,255,.74) 36%,
+    rgba(255,255,255,.18) 54%,
+    rgba(255,255,255,0) 70%)!important;
+}
+.page-hero::after,
+.home-page-hero::after{display:none!important;content:none!important}
+
+.page-hero .container,
+.home-page-hero .container,
+.page-hero-content{
+  width:min(var(--container),calc(100% - 42px))!important;
+  max-width:none!important;
+  margin-inline:auto!important;
+  padding:0!important;
+  position:relative!important;
+  z-index:2!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  justify-content:center!important;
+  text-align:left!important;
+}
+
+.page-hero .eyebrow,
+.home-page-hero .eyebrow{
+  color:var(--green)!important;
+  text-shadow:none!important;
+  font-size:.72rem!important;
+  letter-spacing:.14em!important;
+  font-weight:800!important;
+  max-width:520px!important;
+  justify-content:flex-start!important;
+  margin:0 0 6px!important;
+}
+.page-hero .eyebrow::before,
+.home-page-hero .eyebrow::before{background:var(--green)!important}
+
+.page-hero h1,
+.home-page-hero h1{
+  color:var(--blue)!important;
+  text-shadow:none!important;
+  max-width:570px!important;
+  font-size:clamp(2.35rem,4vw,3.8rem)!important;
+  line-height:1.03!important;
+  letter-spacing:-.045em!important;
+  margin:.28rem 0 .72rem!important;
+}
+.page-hero p,
+.home-page-hero p{
+  color:#294f61!important;
+  text-shadow:none!important;
+  max-width:555px!important;
+  font-size:.98rem!important;
+  line-height:1.62!important;
+  font-weight:500!important;
+  margin:0!important;
+}
+.home-page-hero .hero-actions-center{
+  justify-content:flex-start!important;
+  margin-top:20px!important;
+}
+
+/* Internal pages share the same photographic banner and copy treatment. */
+body[data-page="donation"] .page-hero,
+body[data-page="about"] .page-hero,
+body[data-page="job"] .page-hero,
+body[data-page="admission"] .page-hero,
+body[data-page="portal"] .page-hero,
+body[data-page="contact"] .page-hero{
+  min-height:440px!important;
+}
+
+@media(max-width:900px){
+  .page-hero,.home-page-hero{
+    min-height:405px!important;
+    background-position:58% center!important;
+  }
+  .page-hero::before,.home-page-hero::before{
+    background:linear-gradient(90deg,
+      rgba(255,255,255,.96) 0%,
+      rgba(255,255,255,.91) 38%,
+      rgba(255,255,255,.45) 62%,
+      rgba(255,255,255,.05) 82%)!important;
+  }
+  .page-hero h1,.home-page-hero h1{font-size:clamp(2.15rem,6vw,3rem)!important;max-width:500px!important}
+  .page-hero p,.home-page-hero p{max-width:490px!important;font-size:.9rem!important}
+}
+
+@media(max-width:620px){
+  .page-hero,.home-page-hero{
+    min-height:420px!important;
+    background-position:63% center!important;
+  }
+  .page-hero::before,.home-page-hero::before{
+    background:linear-gradient(90deg,
+      rgba(255,255,255,.97) 0%,
+      rgba(255,255,255,.93) 56%,
+      rgba(255,255,255,.5) 78%,
+      rgba(255,255,255,.12) 100%)!important;
+  }
+  .page-hero .container,
+  .home-page-hero .container,
+  .page-hero-content{
+    width:calc(100% - 30px)!important;
+  }
+  .page-hero .eyebrow,.home-page-hero .eyebrow{font-size:.62rem!important}
+  .page-hero h1,.home-page-hero h1{font-size:2.15rem!important;max-width:330px!important}
+  .page-hero p,.home-page-hero p{font-size:.84rem!important;line-height:1.5!important;max-width:335px!important}
+  .home-page-hero .hero-actions-center{gap:8px!important}
+}
+
+/* ==========================================================
+   V28 — remove excessive white shade from banner tagline area
+   ========================================================== */
+.page-hero::before,
+.home-page-hero::before{
+  display:none !important;
+  content:none !important;
+  background:none !important;
+  opacity:0 !important;
+}
+
+/* Keep text clean and readable without a visible white overlay */
+.page-hero .eyebrow,
+.page-hero h1,
+.page-hero p,
+.home-page-hero .eyebrow,
+.home-page-hero h1,
+.home-page-hero p{
+  text-shadow:0 1px 2px rgba(255,255,255,0.22) !important;
+}
+
+/* ==========================================================
+   V29 — banner copy positioning + white typography
+   Keep student faces clear and move copy/actions slightly lower
+   ========================================================== */
+.page-hero .container,
+.home-page-hero .container,
+.page-hero-content{
+  transform:translateY(54px) !important;
+}
+
+/* Home hero sits a little lower than the internal page copy */
+body[data-page="home"] .home-page-hero .container,
+body[data-page="home"] .page-hero-content{
+  transform:translateY(56px) !important;
+}
+
+/* Keep copy in a narrower left-safe zone so it does not sit on student faces */
+.page-hero .eyebrow,
+.page-hero h1,
+.page-hero p,
+.home-page-hero .eyebrow,
+.home-page-hero h1,
+.home-page-hero p{
+  max-width:390px !important;
+  color:#fff !important;
+  text-shadow:0 2px 5px rgba(0,24,45,.82),0 1px 2px rgba(0,0,0,.5) !important;
+}
+.page-hero .eyebrow,
+.home-page-hero .eyebrow{
+  color:#fff !important;
+}
+.page-hero .eyebrow::before,
+.home-page-hero .eyebrow::before{
+  background:#fff !important;
+}
+.page-hero h1,
+.home-page-hero h1{
+  font-size:clamp(2.2rem,3.55vw,3.35rem) !important;
+  line-height:1.04 !important;
+}
+.page-hero p,
+.home-page-hero p{
+  font-size:.94rem !important;
+  line-height:1.58 !important;
+  font-weight:500 !important;
+}
+
+/* Put Home buttons lower, with clear separation from the description */
+body[data-page="home"] .home-page-hero .hero-actions-center{
+  margin-top:24px !important;
+}
+
+@media (max-width:900px){
+  .page-hero,.home-page-hero{
+    background-position:left center !important;
+  }
+  .page-hero .container,
+  .home-page-hero .container,
+  .page-hero-content{
+    transform:translateY(48px) !important;
+  }
+  body[data-page="home"] .home-page-hero .container,
+  body[data-page="home"] .page-hero-content{
+    transform:translateY(50px) !important;
+  }
+  .page-hero .eyebrow,
+  .page-hero h1,
+  .page-hero p,
+  .home-page-hero .eyebrow,
+  .home-page-hero h1,
+  .home-page-hero p{
+    max-width:340px !important;
+  }
+  .page-hero h1,.home-page-hero h1{
+    font-size:clamp(2rem,5.7vw,2.65rem) !important;
+  }
+  .page-hero p,.home-page-hero p{
+    font-size:.86rem !important;
+  }
+  body[data-page="home"] .home-page-hero .hero-actions-center{
+    margin-top:22px !important;
+  }
+}
+
+@media (max-width:620px){
+  .page-hero,.home-page-hero{
+    background-position:left center !important;
+  }
+  .page-hero .container,
+  .home-page-hero .container,
+  .page-hero-content,
+  body[data-page="home"] .home-page-hero .container,
+  body[data-page="home"] .page-hero-content{
+    transform:translateY(34px) !important;
+  }
+  .page-hero .eyebrow,
+  .page-hero h1,
+  .page-hero p,
+  .home-page-hero .eyebrow,
+  .home-page-hero h1,
+  .home-page-hero p{
+    max-width:285px !important;
+  }
+  .page-hero h1,.home-page-hero h1{
+    font-size:1.95rem !important;
+  }
+  .page-hero p,.home-page-hero p{
+    font-size:.8rem !important;
+    line-height:1.48 !important;
+  }
+  body[data-page="home"] .home-page-hero .hero-actions-center{
+    margin-top:24px !important;
+  }
+}
+
+
+/* V30 — home hero moved slightly upward while keeping students clear */
+body[data-page="home"] .home-page-hero .eyebrow,
+body[data-page="home"] .home-page-hero h1,
+body[data-page="home"] .home-page-hero p{
+  max-width:370px !important;
+}
+body[data-page="home"] .home-page-hero .hero-actions-center{
+  gap:12px !important;
+}
+@media (max-width:900px){
+  body[data-page="home"] .home-page-hero .eyebrow,
+  body[data-page="home"] .home-page-hero h1,
+  body[data-page="home"] .home-page-hero p{
+    max-width:320px !important;
+  }
+}
+@media (max-width:620px){
+  body[data-page="home"] .home-page-hero .hero-actions-center{
+    margin-top:18px !important;
+  }
+  body[data-page="home"] .home-page-hero .eyebrow,
+  body[data-page="home"] .home-page-hero h1,
+  body[data-page="home"] .home-page-hero p{
+    max-width:270px !important;
+  }
+}
+
+/* ==========================================================
+   V31 — Home hero fine tuning
+   - move hero copy slightly higher
+   - keep school name/sign visible in the photo
+   - remove click/focus shade from Contact Us button
+   ========================================================== */
+body[data-page="home"] .home-page-hero{
+  background-position:center top !important;
+}
+body[data-page="home"] .home-page-hero .container,
+body[data-page="home"] .home-page-hero .page-hero-content{
+  transform:translateY(42px) !important;
+}
+body[data-page="home"] .btn-banner-secondary,
+body[data-page="home"] .btn-banner-secondary:hover,
+body[data-page="home"] .btn-banner-secondary:active,
+body[data-page="home"] .btn-banner-secondary:focus{
+  box-shadow:none !important;
+  transform:none !important;
+  outline:none !important;
+  -webkit-tap-highlight-color:transparent !important;
+}
+body[data-page="home"] .btn-banner-secondary:active,
+body[data-page="home"] .btn-banner-secondary:focus{
+  background:#fff !important;
+  color:var(--blue) !important;
+  border-color:#fff !important;
+}
+
+@media (max-width:900px){
+  body[data-page="home"] .home-page-hero{
+    background-position:45% top !important;
+  }
+  body[data-page="home"] .home-page-hero .container,
+  body[data-page="home"] .home-page-hero .page-hero-content{
+    transform:translateY(40px) !important;
+  }
+}
+@media (max-width:620px){
+  body[data-page="home"] .home-page-hero{
+    background-position:42% top !important;
+  }
+  body[data-page="home"] .home-page-hero .container,
+  body[data-page="home"] .home-page-hero .page-hero-content{
+    transform:translateY(28px) !important;
+  }
+}
+
+
+/* ==========================================================
+   V32 — page-specific banners + hero copy refinement
+   ========================================================== */
+
+/* Home page: move copy a little upward and make tagline slightly larger. */
+body[data-page="home"] .home-page-hero .container,
+body[data-page="home"] .home-page-hero .page-hero-content{
+  transform:translateY(24px) !important;
+}
+body[data-page="home"] .home-page-hero .eyebrow{
+  font-size:.84rem !important;
+  letter-spacing:.16em !important;
+  margin-bottom:8px !important;
+}
+body[data-page="home"] .home-page-hero .hero-actions-center{
+  margin-top:18px !important;
+}
+
+/* Use full-width photographic banners with page-specific images. */
+body[data-page="donation"] .page-hero{background-image:url('images/banner-donation-fast.jpg') !important;background-position:center center !important;}
+body[data-page="about"] .page-hero{background-image:url('images/banner-about-fast.jpg') !important;background-position:center center !important;}
+body[data-page="job"] .page-hero{background-image:url('images/banner-job-fast.jpg') !important;background-position:center center !important;}
+body[data-page="admission"] .page-hero{background-image:url('images/banner-admission-fast.jpg') !important;background-position:center center !important;}
+body[data-page="portal"] .page-hero{background-image:url('images/banner-portal-fast.jpg') !important;background-position:center center !important;}
+body[data-page="contact"] .page-hero{background-image:url('images/banner-contact-fast.jpg') !important;background-position:center center !important;}
+
+/* Add a subtle dark readability fade on the left only, avoiding the old white shade. */
+body[data-page="home"] .home-page-hero::before,
+body[data-page="donation"] .page-hero::before,
+body[data-page="about"] .page-hero::before,
+body[data-page="job"] .page-hero::before,
+body[data-page="admission"] .page-hero::before,
+body[data-page="portal"] .page-hero::before,
+body[data-page="contact"] .page-hero::before{
+  display:block !important;
+  content:"" !important;
+  position:absolute !important;
+  inset:0 !important;
+  z-index:0 !important;
+  pointer-events:none !important;
+  opacity:1 !important;
+  background:linear-gradient(90deg,
+    rgba(3,24,46,.62) 0%,
+    rgba(3,24,46,.50) 20%,
+    rgba(3,24,46,.28) 36%,
+    rgba(3,24,46,.08) 52%,
+    rgba(3,24,46,0) 67%) !important;
+}
+
+/* Keep hero copy inside a safer left zone, clear of the key subjects. */
+body[data-page="donation"] .page-hero .container,
+body[data-page="about"] .page-hero .container,
+body[data-page="job"] .page-hero .container,
+body[data-page="admission"] .page-hero .container,
+body[data-page="portal"] .page-hero .container,
+body[data-page="contact"] .page-hero .container{
+  transform:translateY(26px) !important;
+}
+body[data-page="donation"] .page-hero .eyebrow,
+body[data-page="about"] .page-hero .eyebrow,
+body[data-page="job"] .page-hero .eyebrow,
+body[data-page="admission"] .page-hero .eyebrow,
+body[data-page="portal"] .page-hero .eyebrow,
+body[data-page="contact"] .page-hero .eyebrow,
+body[data-page="donation"] .page-hero h1,
+body[data-page="about"] .page-hero h1,
+body[data-page="job"] .page-hero h1,
+body[data-page="admission"] .page-hero h1,
+body[data-page="portal"] .page-hero h1,
+body[data-page="contact"] .page-hero h1,
+body[data-page="donation"] .page-hero p,
+body[data-page="about"] .page-hero p,
+body[data-page="job"] .page-hero p,
+body[data-page="admission"] .page-hero p,
+body[data-page="portal"] .page-hero p,
+body[data-page="contact"] .page-hero p{
+  max-width:400px !important;
+  color:#fff !important;
+  text-shadow:0 2px 7px rgba(0,0,0,.45) !important;
+}
+body[data-page="donation"] .page-hero .eyebrow,
+body[data-page="about"] .page-hero .eyebrow,
+body[data-page="job"] .page-hero .eyebrow,
+body[data-page="admission"] .page-hero .eyebrow,
+body[data-page="portal"] .page-hero .eyebrow,
+body[data-page="contact"] .page-hero .eyebrow,
+body[data-page="home"] .home-page-hero .eyebrow{
+  color:#fff !important;
+}
+body[data-page="donation"] .page-hero .eyebrow::before,
+body[data-page="about"] .page-hero .eyebrow::before,
+body[data-page="job"] .page-hero .eyebrow::before,
+body[data-page="admission"] .page-hero .eyebrow::before,
+body[data-page="portal"] .page-hero .eyebrow::before,
+body[data-page="contact"] .page-hero .eyebrow::before,
+body[data-page="home"] .home-page-hero .eyebrow::before{
+  background:#fff !important;
+}
+body[data-page="donation"] .page-hero h1,
+body[data-page="about"] .page-hero h1,
+body[data-page="job"] .page-hero h1,
+body[data-page="admission"] .page-hero h1,
+body[data-page="portal"] .page-hero h1,
+body[data-page="contact"] .page-hero h1{
+  font-size:clamp(2.2rem,3.4vw,3.2rem) !important;
+  line-height:1.04 !important;
+}
+body[data-page="donation"] .page-hero p,
+body[data-page="about"] .page-hero p,
+body[data-page="job"] .page-hero p,
+body[data-page="admission"] .page-hero p,
+body[data-page="portal"] .page-hero p,
+body[data-page="contact"] .page-hero p{
+  font-size:.95rem !important;
+  line-height:1.58 !important;
+}
+
+@media (max-width:900px){
+  body[data-page="home"] .home-page-hero .container,
+  body[data-page="home"] .home-page-hero .page-hero-content{
+    transform:translateY(20px) !important;
+  }
+  body[data-page="donation"] .page-hero .container,
+  body[data-page="about"] .page-hero .container,
+  body[data-page="job"] .page-hero .container,
+  body[data-page="admission"] .page-hero .container,
+  body[data-page="portal"] .page-hero .container,
+  body[data-page="contact"] .page-hero .container{
+    transform:translateY(22px) !important;
+  }
+  body[data-page="donation"] .page-hero h1,
+  body[data-page="about"] .page-hero h1,
+  body[data-page="job"] .page-hero h1,
+  body[data-page="admission"] .page-hero h1,
+  body[data-page="portal"] .page-hero h1,
+  body[data-page="contact"] .page-hero h1{
+    font-size:clamp(1.95rem,5.1vw,2.55rem) !important;
+  }
+  body[data-page="donation"] .page-hero p,
+  body[data-page="about"] .page-hero p,
+  body[data-page="job"] .page-hero p,
+  body[data-page="admission"] .page-hero p,
+  body[data-page="portal"] .page-hero p,
+  body[data-page="contact"] .page-hero p{
+    font-size:.88rem !important;
+    max-width:340px !important;
+  }
+}
+
+@media (max-width:620px){
+  body[data-page="home"] .home-page-hero .container,
+  body[data-page="home"] .home-page-hero .page-hero-content,
+  body[data-page="donation"] .page-hero .container,
+  body[data-page="about"] .page-hero .container,
+  body[data-page="job"] .page-hero .container,
+  body[data-page="admission"] .page-hero .container,
+  body[data-page="portal"] .page-hero .container,
+  body[data-page="contact"] .page-hero .container{
+    transform:translateY(14px) !important;
+  }
+  body[data-page="home"] .home-page-hero .eyebrow{font-size:.74rem !important;}
+  body[data-page="donation"] .page-hero .eyebrow,
+  body[data-page="about"] .page-hero .eyebrow,
+  body[data-page="job"] .page-hero .eyebrow,
+  body[data-page="admission"] .page-hero .eyebrow,
+  body[data-page="portal"] .page-hero .eyebrow,
+  body[data-page="contact"] .page-hero .eyebrow,
+  body[data-page="donation"] .page-hero h1,
+  body[data-page="about"] .page-hero h1,
+  body[data-page="job"] .page-hero h1,
+  body[data-page="admission"] .page-hero h1,
+  body[data-page="portal"] .page-hero h1,
+  body[data-page="contact"] .page-hero h1,
+  body[data-page="donation"] .page-hero p,
+  body[data-page="about"] .page-hero p,
+  body[data-page="job"] .page-hero p,
+  body[data-page="admission"] .page-hero p,
+  body[data-page="portal"] .page-hero p,
+  body[data-page="contact"] .page-hero p{
+    max-width:300px !important;
+  }
+}
+
+
+/* ==========================================================
+   V33 — fix apply-for-job banner + remove all left banner shade
+   ========================================================== */
+
+/* Make sure Apply for Job uses the correct page key and new image. */
+body[data-page="jobs"] .page-hero{
+  background-image:url('images/banner-job-fast.jpg') !important;
+  background-position:center center !important;
+}
+
+/* Remove every visible left-side banner shade/overlay. */
+.page-hero::before,
+.home-page-hero::before,
+body[data-page="home"] .home-page-hero::before,
+body[data-page="donation"] .page-hero::before,
+body[data-page="about"] .page-hero::before,
+body[data-page="jobs"] .page-hero::before,
+body[data-page="admission"] .page-hero::before,
+body[data-page="portal"] .page-hero::before,
+body[data-page="contact"] .page-hero::before{
+  display:none !important;
+  content:none !important;
+  background:none !important;
+  opacity:0 !important;
+}
+
+/* Keep banner images clean and natural with no tint. */
+.page-hero,
+.home-page-hero,
+body[data-page="donation"] .page-hero,
+body[data-page="about"] .page-hero,
+body[data-page="jobs"] .page-hero,
+body[data-page="admission"] .page-hero,
+body[data-page="portal"] .page-hero,
+body[data-page="contact"] .page-hero{
+  background-color:transparent !important;
+}
+
+/* Preserve readable white copy without the shaded overlay. */
+.page-hero .eyebrow,
+.page-hero h1,
+.page-hero p,
+.home-page-hero .eyebrow,
+.home-page-hero h1,
+.home-page-hero p{
+  color:#ffffff !important;
+  text-shadow:0 2px 8px rgba(8,34,58,.72), 0 1px 2px rgba(0,0,0,.45) !important;
+}
+.page-hero .eyebrow::before,
+.home-page-hero .eyebrow::before{
+  background:#ffffff !important;
+}
+
+
+/* ==========================================================
+   V34 — match inner-page banner size to home banner + sharpen
+   ========================================================== */
+
+/* Make all inner-page banners the same visual height as the home banner. */
+.page-hero,
+body[data-page="donation"] .page-hero,
+body[data-page="about"] .page-hero,
+body[data-page="jobs"] .page-hero,
+body[data-page="admission"] .page-hero,
+body[data-page="portal"] .page-hero,
+body[data-page="contact"] .page-hero{
+  min-height: calc(100svh - 82px) !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+.page-hero .container,
+body[data-page="donation"] .page-hero .container,
+body[data-page="about"] .page-hero .container,
+body[data-page="jobs"] .page-hero .container,
+body[data-page="admission"] .page-hero .container,
+body[data-page="portal"] .page-hero .container,
+body[data-page="contact"] .page-hero .container{
+  min-height: calc(100svh - 82px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+}
+
+/* Keep copy safely on the left for all internal pages. */
+.page-hero .eyebrow,
+.page-hero h1,
+.page-hero p{
+  max-width: min(560px, 92%) !important;
+}
+
+/* Tablet */
+@media (max-width: 991px){
+  .page-hero,
+  body[data-page="donation"] .page-hero,
+  body[data-page="about"] .page-hero,
+  body[data-page="jobs"] .page-hero,
+  body[data-page="admission"] .page-hero,
+  body[data-page="portal"] .page-hero,
+  body[data-page="contact"] .page-hero{
+    min-height: 560px !important;
+  }
+  .page-hero .container,
+  body[data-page="donation"] .page-hero .container,
+  body[data-page="about"] .page-hero .container,
+  body[data-page="jobs"] .page-hero .container,
+  body[data-page="admission"] .page-hero .container,
+  body[data-page="portal"] .page-hero .container,
+  body[data-page="contact"] .page-hero .container{
+    min-height: 560px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 620px){
+  .page-hero,
+  body[data-page="donation"] .page-hero,
+  body[data-page="about"] .page-hero,
+  body[data-page="jobs"] .page-hero,
+  body[data-page="admission"] .page-hero,
+  body[data-page="portal"] .page-hero,
+  body[data-page="contact"] .page-hero{
+    min-height: 470px !important;
+  }
+  .page-hero .container,
+  body[data-page="donation"] .page-hero .container,
+  body[data-page="about"] .page-hero .container,
+  body[data-page="jobs"] .page-hero .container,
+  body[data-page="admission"] .page-hero .container,
+  body[data-page="portal"] .page-hero .container,
+  body[data-page="contact"] .page-hero .container{
+    min-height: 470px !important;
+  }
+}
+
+
+/* ==========================================================
+   V35 — HD inner-page banner assets for Donation → Contact
+   ========================================================== */
+body[data-page="donation"] .page-hero,
+body[data-page="about"] .page-hero,
+body[data-page="job"] .page-hero,
+body[data-page="admission"] .page-hero,
+body[data-page="portal"] .page-hero,
+body[data-page="contact"] .page-hero{
+  background-size:cover !important;
+  background-position:center center !important;
+  image-rendering:auto;
+}
+
+
+/* ==========================================================
+   V36 — Replace Donation→Contact banners with new page banners
+   Match home banner sizing and remove all banner shade overlays
+   ========================================================== */
+body[data-page="donation"] .page-hero{background-image:url('images/banner-donation-fast.jpg') !important;}
+body[data-page="about"] .page-hero{background-image:url('images/banner-about-fast.jpg') !important;}
+body[data-page="job"] .page-hero{background-image:url('images/banner-job-fast.jpg') !important;}
+body[data-page="admission"] .page-hero{background-image:url('images/banner-admission-fast.jpg') !important;}
+body[data-page="portal"] .page-hero{background-image:url('images/banner-portal-fast.jpg') !important;}
+body[data-page="contact"] .page-hero{background-image:url('images/banner-contact-fast.jpg') !important;}
+
+body[data-page="donation"] .page-hero,
+body[data-page="about"] .page-hero,
+body[data-page="job"] .page-hero,
+body[data-page="admission"] .page-hero,
+body[data-page="portal"] .page-hero,
+body[data-page="contact"] .page-hero{
+  min-height:620px !important;
+  background-size:cover !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+}
+
+/* Remove all visible shade/overlay from inner-page banners */
+body[data-page="donation"] .page-hero::before,
+body[data-page="about"] .page-hero::before,
+body[data-page="job"] .page-hero::before,
+body[data-page="admission"] .page-hero::before,
+body[data-page="portal"] .page-hero::before,
+body[data-page="contact"] .page-hero::before,
+body[data-page="donation"] .page-hero::after,
+body[data-page="about"] .page-hero::after,
+body[data-page="job"] .page-hero::after,
+body[data-page="admission"] .page-hero::after,
+body[data-page="portal"] .page-hero::after,
+body[data-page="contact"] .page-hero::after{
+  display:none !important;
+  content:none !important;
+  background:none !important;
+  opacity:0 !important;
+  box-shadow:none !important;
+}
+
+/* Keep text clean on the left, similar to home page positioning */
+body[data-page="donation"] .page-hero .container,
+body[data-page="about"] .page-hero .container,
+body[data-page="job"] .page-hero .container,
+body[data-page="admission"] .page-hero .container,
+body[data-page="portal"] .page-hero .container,
+body[data-page="contact"] .page-hero .container{
+  transform:translateY(24px) !important;
+}
+body[data-page="donation"] .page-hero .eyebrow,
+body[data-page="about"] .page-hero .eyebrow,
+body[data-page="job"] .page-hero .eyebrow,
+body[data-page="admission"] .page-hero .eyebrow,
+body[data-page="portal"] .page-hero .eyebrow,
+body[data-page="contact"] .page-hero .eyebrow,
+body[data-page="donation"] .page-hero h1,
+body[data-page="about"] .page-hero h1,
+body[data-page="job"] .page-hero h1,
+body[data-page="admission"] .page-hero h1,
+body[data-page="portal"] .page-hero h1,
+body[data-page="contact"] .page-hero h1,
+body[data-page="donation"] .page-hero p,
+body[data-page="about"] .page-hero p,
+body[data-page="job"] .page-hero p,
+body[data-page="admission"] .page-hero p,
+body[data-page="portal"] .page-hero p,
+body[data-page="contact"] .page-hero p{
+  max-width:420px !important;
+  color:#ffffff !important;
+  text-shadow:0 2px 8px rgba(0,0,0,.42) !important;
+}
+
+@media (max-width:900px){
+  body[data-page="donation"] .page-hero,
+  body[data-page="about"] .page-hero,
+  body[data-page="job"] .page-hero,
+  body[data-page="admission"] .page-hero,
+  body[data-page="portal"] .page-hero,
+  body[data-page="contact"] .page-hero{
+    min-height:500px !important;
+    background-position:center center !important;
+  }
+}
+
+@media (max-width:620px){
+  body[data-page="donation"] .page-hero,
+  body[data-page="about"] .page-hero,
+  body[data-page="job"] .page-hero,
+  body[data-page="admission"] .page-hero,
+  body[data-page="portal"] .page-hero,
+  body[data-page="contact"] .page-hero{
+    min-height:430px !important;
+    background-position:center center !important;
+  }
+  body[data-page="donation"] .page-hero .container,
+  body[data-page="about"] .page-hero .container,
+  body[data-page="job"] .page-hero .container,
+  body[data-page="admission"] .page-hero .container,
+  body[data-page="portal"] .page-hero .container,
+  body[data-page="contact"] .page-hero .container{
+    transform:translateY(18px) !important;
+  }
+}
+
+/* ==========================================================
+   V38 — Final page-banner install
+   Apply the 6 supplied banners to Donation → Contact pages,
+   keep banner size aligned with Home hero, and preserve HD display.
+   ========================================================== */
+
+/* Page-specific banner images */
+body[data-page="donation"] .page-hero{background-image:url('images/banner-donation-fast.jpg') !important;}
+body[data-page="about"] .page-hero{background-image:url('images/banner-about-fast.jpg') !important;}
+body[data-page="jobs"] .page-hero,
+body[data-page="job"] .page-hero{background-image:url('images/banner-job-fast.jpg') !important;}
+body[data-page="admission"] .page-hero{background-image:url('images/banner-admission-fast.jpg') !important;}
+body[data-page="portal"] .page-hero{background-image:url('images/banner-portal-fast.jpg') !important;}
+body[data-page="contact"] .page-hero{background-image:url('images/banner-contact-fast.jpg') !important;}
+
+/* Same overall visual size as Home page */
+body[data-page="donation"] .page-hero,
+body[data-page="about"] .page-hero,
+body[data-page="jobs"] .page-hero,
+body[data-page="job"] .page-hero,
+body[data-page="admission"] .page-hero,
+body[data-page="portal"] .page-hero,
+body[data-page="contact"] .page-hero{
+  min-height:calc(100svh - 82px) !important;
+  background-size:cover !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+  background-color:transparent !important;
+}
+
+body[data-page="donation"] .page-hero .container,
+body[data-page="about"] .page-hero .container,
+body[data-page="jobs"] .page-hero .container,
+body[data-page="job"] .page-hero .container,
+body[data-page="admission"] .page-hero .container,
+body[data-page="portal"] .page-hero .container,
+body[data-page="contact"] .page-hero .container{
+  min-height:calc(100svh - 82px) !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  align-items:flex-start !important;
+}
+
+/* No artificial left shade */
+body[data-page="donation"] .page-hero::before,
+body[data-page="about"] .page-hero::before,
+body[data-page="jobs"] .page-hero::before,
+body[data-page="job"] .page-hero::before,
+body[data-page="admission"] .page-hero::before,
+body[data-page="portal"] .page-hero::before,
+body[data-page="contact"] .page-hero::before,
+body[data-page="donation"] .page-hero::after,
+body[data-page="about"] .page-hero::after,
+body[data-page="jobs"] .page-hero::after,
+body[data-page="job"] .page-hero::after,
+body[data-page="admission"] .page-hero::after,
+body[data-page="portal"] .page-hero::after,
+body[data-page="contact"] .page-hero::after{
+  display:none !important;
+  content:none !important;
+  background:none !important;
+  opacity:0 !important;
+  box-shadow:none !important;
+}
+
+/* Keep copy positioned like the home hero, on the left and off the subject faces */
+body[data-page="donation"] .page-hero .container,
+body[data-page="about"] .page-hero .container,
+body[data-page="jobs"] .page-hero .container,
+body[data-page="job"] .page-hero .container,
+body[data-page="admission"] .page-hero .container,
+body[data-page="portal"] .page-hero .container,
+body[data-page="contact"] .page-hero .container{
+  transform:translateY(24px) !important;
+}
+body[data-page="donation"] .page-hero .eyebrow,
+body[data-page="about"] .page-hero .eyebrow,
+body[data-page="jobs"] .page-hero .eyebrow,
+body[data-page="job"] .page-hero .eyebrow,
+body[data-page="admission"] .page-hero .eyebrow,
+body[data-page="portal"] .page-hero .eyebrow,
+body[data-page="contact"] .page-hero .eyebrow,
+body[data-page="donation"] .page-hero h1,
+body[data-page="about"] .page-hero h1,
+body[data-page="jobs"] .page-hero h1,
+body[data-page="job"] .page-hero h1,
+body[data-page="admission"] .page-hero h1,
+body[data-page="portal"] .page-hero h1,
+body[data-page="contact"] .page-hero h1,
+body[data-page="donation"] .page-hero p,
+body[data-page="about"] .page-hero p,
+body[data-page="jobs"] .page-hero p,
+body[data-page="job"] .page-hero p,
+body[data-page="admission"] .page-hero p,
+body[data-page="portal"] .page-hero p,
+body[data-page="contact"] .page-hero p{
+  max-width:420px !important;
+  color:#ffffff !important;
+  text-shadow:0 2px 8px rgba(0,0,0,.42) !important;
+}
+
+@media (max-width:860px){
+  body[data-page="donation"] .page-hero,
+  body[data-page="about"] .page-hero,
+  body[data-page="jobs"] .page-hero,
+  body[data-page="job"] .page-hero,
+  body[data-page="admission"] .page-hero,
+  body[data-page="portal"] .page-hero,
+  body[data-page="contact"] .page-hero{
+    min-height:calc(100svh - 74px) !important;
+  }
+  body[data-page="donation"] .page-hero .container,
+  body[data-page="about"] .page-hero .container,
+  body[data-page="jobs"] .page-hero .container,
+  body[data-page="job"] .page-hero .container,
+  body[data-page="admission"] .page-hero .container,
+  body[data-page="portal"] .page-hero .container,
+  body[data-page="contact"] .page-hero .container{
+    min-height:calc(100svh - 74px) !important;
+    transform:translateY(22px) !important;
+  }
+}
+
+@media (max-width:620px){
+  body[data-page="donation"] .page-hero,
+  body[data-page="about"] .page-hero,
+  body[data-page="jobs"] .page-hero,
+  body[data-page="job"] .page-hero,
+  body[data-page="admission"] .page-hero,
+  body[data-page="portal"] .page-hero,
+  body[data-page="contact"] .page-hero{
+    min-height:520px !important;
+  }
+  body[data-page="donation"] .page-hero .container,
+  body[data-page="about"] .page-hero .container,
+  body[data-page="jobs"] .page-hero .container,
+  body[data-page="job"] .page-hero .container,
+  body[data-page="admission"] .page-hero .container,
+  body[data-page="portal"] .page-hero .container,
+  body[data-page="contact"] .page-hero .container{
+    min-height:520px !important;
+    transform:translateY(18px) !important;
+  }
+}
+
+/* ==========================================================
+   V41 — hero copy sizing/position/color refinement
+   ========================================================== */
+
+/* All hero tagline, heading and supporting text in brand blue. */
+.home-page-hero .eyebrow,
+.home-page-hero h1,
+.home-page-hero p,
+.page-hero .eyebrow,
+.page-hero h1,
+.page-hero p{
+  color:var(--blue) !important;
+  text-shadow:0 1px 2px rgba(255,255,255,.92), 0 0 5px rgba(255,255,255,.55) !important;
+}
+.home-page-hero .eyebrow::before,
+.page-hero .eyebrow::before{
+  background:var(--blue) !important;
+}
+
+/* Home: move the two CTA buttons slightly left while preserving their spacing. */
+body[data-page="home"] .home-page-hero .hero-actions-center{
+  transform:translateX(-14px) !important;
+}
+
+/* Internal pages: make the tagline/title/description more prominent. */
+body[data-page="donation"] .page-hero .eyebrow,
+body[data-page="about"] .page-hero .eyebrow,
+body[data-page="jobs"] .page-hero .eyebrow,
+body[data-page="job"] .page-hero .eyebrow,
+body[data-page="admission"] .page-hero .eyebrow,
+body[data-page="portal"] .page-hero .eyebrow,
+body[data-page="contact"] .page-hero .eyebrow{
+  font-size:.9rem !important;
+  letter-spacing:.15em !important;
+  margin-bottom:8px !important;
+}
+
+body[data-page="donation"] .page-hero h1,
+body[data-page="about"] .page-hero h1,
+body[data-page="jobs"] .page-hero h1,
+body[data-page="job"] .page-hero h1,
+body[data-page="admission"] .page-hero h1,
+body[data-page="portal"] .page-hero h1,
+body[data-page="contact"] .page-hero h1{
+  font-size:clamp(3rem,4.7vw,4.35rem) !important;
+  line-height:1.02 !important;
+  max-width:560px !important;
+  margin:.18rem 0 .78rem !important;
+}
+
+body[data-page="donation"] .page-hero p,
+body[data-page="about"] .page-hero p,
+body[data-page="jobs"] .page-hero p,
+body[data-page="job"] .page-hero p,
+body[data-page="admission"] .page-hero p,
+body[data-page="portal"] .page-hero p,
+body[data-page="contact"] .page-hero p{
+  font-size:1.08rem !important;
+  line-height:1.6 !important;
+  max-width:520px !important;
+  font-weight:600 !important;
+}
+
+/* Donation hero: lift the copy a little more than the other pages. */
+body[data-page="donation"] .page-hero .container{
+  transform:translateY(-12px) !important;
+}
+body[data-page="donation"] .page-hero .eyebrow{
+  font-size:.94rem !important;
+}
+body[data-page="donation"] .page-hero h1{
+  font-size:clamp(3.15rem,5vw,4.55rem) !important;
+}
+body[data-page="donation"] .page-hero p{
+  font-size:1.12rem !important;
+  max-width:535px !important;
+}
+
+@media (max-width:900px){
+  body[data-page="home"] .home-page-hero .hero-actions-center{
+    transform:translateX(-10px) !important;
+  }
+  body[data-page="donation"] .page-hero .container{
+    transform:translateY(-6px) !important;
+  }
+  body[data-page="donation"] .page-hero .eyebrow,
+  body[data-page="about"] .page-hero .eyebrow,
+  body[data-page="jobs"] .page-hero .eyebrow,
+  body[data-page="job"] .page-hero .eyebrow,
+  body[data-page="admission"] .page-hero .eyebrow,
+  body[data-page="portal"] .page-hero .eyebrow,
+  body[data-page="contact"] .page-hero .eyebrow{
+    font-size:.78rem !important;
+  }
+  body[data-page="donation"] .page-hero h1,
+  body[data-page="about"] .page-hero h1,
+  body[data-page="jobs"] .page-hero h1,
+  body[data-page="job"] .page-hero h1,
+  body[data-page="admission"] .page-hero h1,
+  body[data-page="portal"] .page-hero h1,
+  body[data-page="contact"] .page-hero h1{
+    font-size:clamp(2.55rem,7vw,3.45rem) !important;
+    max-width:470px !important;
+  }
+  body[data-page="donation"] .page-hero p,
+  body[data-page="about"] .page-hero p,
+  body[data-page="jobs"] .page-hero p,
+  body[data-page="job"] .page-hero p,
+  body[data-page="admission"] .page-hero p,
+  body[data-page="portal"] .page-hero p,
+  body[data-page="contact"] .page-hero p{
+    font-size:.98rem !important;
+    max-width:450px !important;
+  }
+}
+
+@media (max-width:620px){
+  body[data-page="home"] .home-page-hero .hero-actions-center{
+    transform:translateX(-4px) !important;
+  }
+  body[data-page="donation"] .page-hero .container{
+    transform:translateY(0) !important;
+  }
+  body[data-page="donation"] .page-hero .eyebrow,
+  body[data-page="about"] .page-hero .eyebrow,
+  body[data-page="jobs"] .page-hero .eyebrow,
+  body[data-page="job"] .page-hero .eyebrow,
+  body[data-page="admission"] .page-hero .eyebrow,
+  body[data-page="portal"] .page-hero .eyebrow,
+  body[data-page="contact"] .page-hero .eyebrow{
+    font-size:.7rem !important;
+  }
+  body[data-page="donation"] .page-hero h1,
+  body[data-page="about"] .page-hero h1,
+  body[data-page="jobs"] .page-hero h1,
+  body[data-page="job"] .page-hero h1,
+  body[data-page="admission"] .page-hero h1,
+  body[data-page="portal"] .page-hero h1,
+  body[data-page="contact"] .page-hero h1{
+    font-size:2.3rem !important;
+    max-width:315px !important;
+  }
+  body[data-page="donation"] .page-hero p,
+  body[data-page="about"] .page-hero p,
+  body[data-page="jobs"] .page-hero p,
+  body[data-page="job"] .page-hero p,
+  body[data-page="admission"] .page-hero p,
+  body[data-page="portal"] .page-hero p,
+  body[data-page="contact"] .page-hero p{
+    font-size:.88rem !important;
+    line-height:1.5 !important;
+    max-width:305px !important;
+  }
+}
+
+
+/* ==========================================================
+   V42 — requested white sections + consistent blue hero copy
+   ========================================================== */
+
+/* Donation: How It Works section on a clean white background. */
+body[data-page="donation"] #donation-steps{
+  background:#ffffff !important;
+}
+
+/* Admission: Learning Benefits section on a clean white background. */
+body[data-page="admission"] #learning-benefits{
+  background:#ffffff !important;
+}
+
+/* Keep hero tagline, title and supporting text consistently blue on every page. */
+body[data-page="home"] .home-page-hero .eyebrow,
+body[data-page="home"] .home-page-hero h1,
+body[data-page="home"] .home-page-hero p,
+body[data-page="donation"] .page-hero .eyebrow,
+body[data-page="donation"] .page-hero h1,
+body[data-page="donation"] .page-hero p,
+body[data-page="about"] .page-hero .eyebrow,
+body[data-page="about"] .page-hero h1,
+body[data-page="about"] .page-hero p,
+body[data-page="jobs"] .page-hero .eyebrow,
+body[data-page="jobs"] .page-hero h1,
+body[data-page="jobs"] .page-hero p,
+body[data-page="job"] .page-hero .eyebrow,
+body[data-page="job"] .page-hero h1,
+body[data-page="job"] .page-hero p,
+body[data-page="admission"] .page-hero .eyebrow,
+body[data-page="admission"] .page-hero h1,
+body[data-page="admission"] .page-hero p,
+body[data-page="portal"] .page-hero .eyebrow,
+body[data-page="portal"] .page-hero h1,
+body[data-page="portal"] .page-hero p,
+body[data-page="contact"] .page-hero .eyebrow,
+body[data-page="contact"] .page-hero h1,
+body[data-page="contact"] .page-hero p{
+  color:var(--blue) !important;
+}
+
+body[data-page="home"] .home-page-hero .eyebrow::before,
+body[data-page="donation"] .page-hero .eyebrow::before,
+body[data-page="about"] .page-hero .eyebrow::before,
+body[data-page="jobs"] .page-hero .eyebrow::before,
+body[data-page="job"] .page-hero .eyebrow::before,
+body[data-page="admission"] .page-hero .eyebrow::before,
+body[data-page="portal"] .page-hero .eyebrow::before,
+body[data-page="contact"] .page-hero .eyebrow::before{
+  background:var(--blue) !important;
+}
+
+
+/* =========================
+   Final hero editorial refinement — 28 Sep 2026
+   Black left shade + serif heading + clean sans support text
+   ========================= */
+.page-hero,
+.home-page-hero{
+  position:relative;
+  overflow:hidden;
+}
+
+.page-hero:before,
+.home-page-hero:before{
+  display:block !important;
+  content:'' !important;
+  position:absolute !important;
+  inset:0 !important;
+  z-index:1 !important;
+  background:linear-gradient(90deg,
+    rgba(0,0,0,.62) 0%,
+    rgba(0,0,0,.48) 24%,
+    rgba(0,0,0,.26) 44%,
+    rgba(0,0,0,.10) 60%,
+    rgba(0,0,0,0) 78%) !important;
+}
+
+.page-hero .container,
+.home-page-hero .container,
+.page-hero-content{
+  position:relative !important;
+  z-index:2 !important;
+}
+
+.page-hero .eyebrow,
+.home-page-hero .eyebrow{
+  font-family:'Inter','Poppins',Arial,sans-serif !important;
+  font-size:.82rem !important;
+  font-weight:800 !important;
+  letter-spacing:.17em !important;
+  color:#8FF0C4 !important;
+  text-transform:uppercase !important;
+  text-shadow:none !important;
+}
+
+.page-hero .eyebrow:before,
+.home-page-hero .eyebrow:before{
+  background:#8FF0C4 !important;
+}
+
+.page-hero h1,
+.home-page-hero h1{
+  font-family:'Cormorant Garamond','Bodoni MT','Didot','Times New Roman',serif !important;
+  font-weight:700 !important;
+  line-height:.95 !important;
+  letter-spacing:-.025em !important;
+  color:#FFFFFF !important;
+  max-width:760px !important;
+  margin:.55rem 0 .9rem !important;
+  text-shadow:0 3px 18px rgba(0,0,0,.28) !important;
+}
+
+.page-hero p,
+.home-page-hero p{
+  font-family:'Inter','Poppins',Arial,sans-serif !important;
+  font-size:1.04rem !important;
+  line-height:1.6 !important;
+  font-weight:500 !important;
+  color:rgba(255,255,255,.96) !important;
+  max-width:700px !important;
+  text-shadow:0 2px 14px rgba(0,0,0,.22) !important;
+}
+
+@media (max-width: 860px){
+  .page-hero:before,
+  .home-page-hero:before{
+    background:linear-gradient(90deg,
+      rgba(0,0,0,.64) 0%,
+      rgba(0,0,0,.52) 30%,
+      rgba(0,0,0,.26) 56%,
+      rgba(0,0,0,0) 82%) !important;
+  }
+  .page-hero h1,
+  .home-page-hero h1{
+    line-height:.98 !important;
+  }
+}
+
+@media (max-width: 620px){
+  .page-hero:before,
+  .home-page-hero:before{
+    background:linear-gradient(180deg,
+      rgba(0,0,0,.56) 0%,
+      rgba(0,0,0,.42) 42%,
+      rgba(0,0,0,.12) 72%,
+      rgba(0,0,0,0) 100%) !important;
+  }
+  .page-hero .eyebrow,
+  .home-page-hero .eyebrow{
+    font-size:.74rem !important;
+  }
+  .page-hero p,
+  .home-page-hero p{
+    font-size:.96rem !important;
+  }
+}
+
+/* =========================
+   V44 — hero copy position + larger typography
+   Requested refinement: Home copy slightly higher, all page hero text larger
+   ========================= */
+
+/* Home: lift the complete tagline / heading / description / CTA group slightly upward. */
+body[data-page="home"] .home-page-hero .container,
+body[data-page="home"] .home-page-hero .page-hero-content{
+  transform:translateY(4px) !important;
+}
+
+/* Larger clean tagline on every hero. */
+.page-hero .eyebrow,
+.home-page-hero .eyebrow{
+  font-size:.96rem !important;
+  line-height:1.25 !important;
+  letter-spacing:.16em !important;
+  margin-bottom:10px !important;
+}
+
+/* Stronger editorial headings while keeping them inside the left safe zone. */
+.page-hero h1,
+.home-page-hero h1{
+  font-size:clamp(3.35rem,5.15vw,4.85rem) !important;
+  line-height:.94 !important;
+  max-width:720px !important;
+  margin:.34rem 0 .9rem !important;
+}
+
+/* Larger description text on every page. */
+.page-hero p,
+.home-page-hero p{
+  font-size:1.14rem !important;
+  line-height:1.58 !important;
+  max-width:650px !important;
+}
+
+/* Keep internal-page copy balanced and readable over the banner. */
+body[data-page="donation"] .page-hero .container,
+body[data-page="about"] .page-hero .container,
+body[data-page="jobs"] .page-hero .container,
+body[data-page="job"] .page-hero .container,
+body[data-page="admission"] .page-hero .container,
+body[data-page="portal"] .page-hero .container,
+body[data-page="contact"] .page-hero .container{
+  transform:translateY(4px) !important;
+}
+
+@media (max-width:900px){
+  body[data-page="home"] .home-page-hero .container,
+  body[data-page="home"] .home-page-hero .page-hero-content,
+  body[data-page="donation"] .page-hero .container,
+  body[data-page="about"] .page-hero .container,
+  body[data-page="jobs"] .page-hero .container,
+  body[data-page="job"] .page-hero .container,
+  body[data-page="admission"] .page-hero .container,
+  body[data-page="portal"] .page-hero .container,
+  body[data-page="contact"] .page-hero .container{
+    transform:translateY(0) !important;
+  }
+  .page-hero .eyebrow,
+  .home-page-hero .eyebrow{
+    font-size:.86rem !important;
+  }
+  .page-hero h1,
+  .home-page-hero h1{
+    font-size:clamp(2.9rem,7vw,4rem) !important;
+    max-width:560px !important;
+  }
+  .page-hero p,
+  .home-page-hero p{
+    font-size:1.04rem !important;
+    max-width:520px !important;
+  }
+}
+
+@media (max-width:620px){
+  .page-hero .eyebrow,
+  .home-page-hero .eyebrow{
+    font-size:.76rem !important;
+    letter-spacing:.14em !important;
+    margin-bottom:7px !important;
+  }
+  .page-hero h1,
+  .home-page-hero h1{
+    font-size:2.55rem !important;
+    line-height:.98 !important;
+    max-width:330px !important;
+    margin:.28rem 0 .7rem !important;
+  }
+  .page-hero p,
+  .home-page-hero p{
+    font-size:.94rem !important;
+    line-height:1.5 !important;
+    max-width:320px !important;
+  }
+}
+
+/* =========================
+   V45 — White hero copy + branded left gradient + safer text placement
+   Requested refinement: white tagline/text on every banner, matching left gradient,
+   and safer text placement for Home, Donation, Admission, and Contact so copy
+   stays away from student faces.
+   ========================= */
+
+.page-hero,
+.home-page-hero{
+  position:relative !important;
+  overflow:hidden !important;
+  color:#fff !important;
+}
+
+.page-hero::before,
+.home-page-hero::before{
+  content:'' !important;
+  display:block !important;
+  position:absolute !important;
+  inset:0 !important;
+  z-index:1 !important;
+  background:
+    linear-gradient(90deg,
+      rgba(6,31,57,.86) 0%,
+      rgba(8,72,115,.80) 24%,
+      rgba(7,145,128,.54) 46%,
+      rgba(7,145,128,.20) 62%,
+      rgba(7,145,128,0) 78%),
+    linear-gradient(180deg,
+      rgba(0,0,0,.10) 0%,
+      rgba(0,0,0,.06) 50%,
+      rgba(0,0,0,.12) 100%) !important;
+  pointer-events:none !important;
+}
+
+.page-hero::after,
+.home-page-hero::after{
+  display:none !important;
+  content:none !important;
+}
+
+.page-hero .container,
+.home-page-hero .container,
+.page-hero-content{
+  position:relative !important;
+  z-index:2 !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  justify-content:center !important;
+  text-align:left !important;
+  width:min(var(--container),calc(100% - 40px)) !important;
+  max-width:none !important;
+}
+
+.page-hero .eyebrow,
+.page-hero h1,
+.page-hero p,
+.home-page-hero .eyebrow,
+.home-page-hero h1,
+.home-page-hero p{
+  color:#ffffff !important;
+  text-align:left !important;
+}
+
+.page-hero .eyebrow,
+.home-page-hero .eyebrow{
+  justify-content:flex-start !important;
+  font-family:'Inter','Poppins',Arial,sans-serif !important;
+  font-size:1rem !important;
+  letter-spacing:.18em !important;
+  line-height:1.25 !important;
+  margin-bottom:12px !important;
+  color:rgba(255,255,255,.98) !important;
+  text-shadow:0 3px 18px rgba(0,0,0,.32) !important;
+}
+
+.page-hero .eyebrow::before,
+.home-page-hero .eyebrow::before{
+  background:#7eddd1 !important;
+}
+
+.page-hero h1,
+.home-page-hero h1{
+  font-family:'Cormorant Garamond',Georgia,serif !important;
+  font-weight:700 !important;
+  font-size:clamp(3.45rem,5.2vw,5rem) !important;
+  line-height:.92 !important;
+  letter-spacing:-.03em !important;
+  margin:.28rem 0 .9rem !important;
+  max-width:560px !important;
+  color:#fff !important;
+  text-shadow:0 4px 24px rgba(0,0,0,.38) !important;
+}
+
+.page-hero p,
+.home-page-hero p{
+  font-family:'Inter','Poppins',Arial,sans-serif !important;
+  font-size:1.12rem !important;
+  line-height:1.58 !important;
+  font-weight:500 !important;
+  max-width:520px !important;
+  color:rgba(255,255,255,.97) !important;
+  text-shadow:0 3px 18px rgba(0,0,0,.28) !important;
+}
+
+.home-page-hero .hero-actions-center{
+  justify-content:flex-start !important;
+  margin-top:24px !important;
+}
+
+/* Home: move copy slightly upward and keep it within a safe left area. */
+body[data-page="home"] .home-page-hero .container,
+body[data-page="home"] .page-hero-content{
+  transform:translateY(-52px) !important;
+}
+body[data-page="home"] .home-page-hero h1,
+body[data-page="home"] .page-hero-content h1{
+  max-width:520px !important;
+}
+body[data-page="home"] .home-page-hero p,
+body[data-page="home"] .page-hero-content p{
+  max-width:500px !important;
+}
+
+/* Donation, Admission and Contact: shift copy a bit up and tighten width
+   so text stays away from the people on the right side of the banner. */
+body[data-page="donation"] .page-hero .container,
+body[data-page="admission"] .page-hero .container,
+body[data-page="contact"] .page-hero .container{
+  transform:translateY(-26px) !important;
+}
+body[data-page="donation"] .page-hero h1,
+body[data-page="admission"] .page-hero h1,
+body[data-page="contact"] .page-hero h1{
+  max-width:500px !important;
+}
+body[data-page="donation"] .page-hero p,
+body[data-page="admission"] .page-hero p,
+body[data-page="contact"] .page-hero p{
+  max-width:470px !important;
+}
+
+/* Keep the remaining inner pages similarly aligned, slightly larger, and clean. */
+body[data-page="about"] .page-hero .container,
+body[data-page="jobs"] .page-hero .container,
+body[data-page="portal"] .page-hero .container{
+  transform:translateY(-18px) !important;
+}
+body[data-page="about"] .page-hero h1,
+body[data-page="jobs"] .page-hero h1,
+body[data-page="portal"] .page-hero h1{
+  max-width:520px !important;
+}
+body[data-page="about"] .page-hero p,
+body[data-page="jobs"] .page-hero p,
+body[data-page="portal"] .page-hero p{
+  max-width:500px !important;
+}
+
+@media (max-width: 980px){
+  .page-hero::before,
+  .home-page-hero::before{
+    background:
+      linear-gradient(90deg,
+        rgba(6,31,57,.78) 0%,
+        rgba(8,72,115,.72) 34%,
+        rgba(7,145,128,.38) 58%,
+        rgba(7,145,128,0) 84%) !important;
+  }
+
+  .page-hero h1,
+  .home-page-hero h1{
+    font-size:clamp(2.85rem,7vw,4rem) !important;
+    max-width:500px !important;
+  }
+
+  .page-hero p,
+  .home-page-hero p{
+    font-size:1rem !important;
+    max-width:470px !important;
+  }
+
+  body[data-page="home"] .home-page-hero .container,
+  body[data-page="home"] .page-hero-content{
+    transform:translateY(-24px) !important;
+  }
+
+  body[data-page="donation"] .page-hero .container,
+  body[data-page="admission"] .page-hero .container,
+  body[data-page="contact"] .page-hero .container,
+  body[data-page="about"] .page-hero .container,
+  body[data-page="jobs"] .page-hero .container,
+  body[data-page="portal"] .page-hero .container{
+    transform:translateY(-10px) !important;
+  }
+}
+
+@media (max-width: 620px){
+  .page-hero,
+  .home-page-hero{
+    min-height:420px !important;
+  }
+
+  .page-hero::before,
+  .home-page-hero::before{
+    background:
+      linear-gradient(180deg,
+        rgba(6,31,57,.78) 0%,
+        rgba(8,72,115,.64) 36%,
+        rgba(7,145,128,.24) 68%,
+        rgba(7,145,128,0) 100%) !important;
+  }
+
+  .page-hero .container,
+  .home-page-hero .container,
+  .page-hero-content{
+    padding-inline:20px !important;
+  }
+
+  .page-hero .eyebrow,
+  .home-page-hero .eyebrow{
+    font-size:.78rem !important;
+    margin-bottom:8px !important;
+  }
+
+  .page-hero h1,
+  .home-page-hero h1{
+    font-size:2.55rem !important;
+    line-height:.96 !important;
+    max-width:330px !important;
+  }
+
+  .page-hero p,
+  .home-page-hero p{
+    font-size:.94rem !important;
+    line-height:1.5 !important;
+    max-width:320px !important;
+  }
+
+  body[data-page="home"] .home-page-hero .container,
+  body[data-page="home"] .page-hero-content,
+  body[data-page="donation"] .page-hero .container,
+  body[data-page="admission"] .page-hero .container,
+  body[data-page="contact"] .page-hero .container,
+  body[data-page="about"] .page-hero .container,
+  body[data-page="jobs"] .page-hero .container,
+  body[data-page="portal"] .page-hero .container{
+    transform:none !important;
+  }
+}
+
+/* =====================================================
+   Final refinement — white hero text + soft white gradient
+   behind the hero copy on every page banner
+   ===================================================== */
+.page-hero .container,
+.home-page-hero .container,
+.page-hero-content{
+  position:relative !important;
+  overflow:visible !important;
+  padding:40px 42px 40px 18px !important;
+}
+
+.page-hero .container > *,
+.home-page-hero .container > *,
+.page-hero-content > *{
+  position:relative !important;
+  z-index:2 !important;
+}
+
+.page-hero .container::before,
+.home-page-hero .container::before,
+.page-hero-content::before{
+  content:'';
+  position:absolute;
+  left:-18px;
+  top:50%;
+  transform:translateY(-50%);
+  width:clamp(360px, 58vw, 780px);
+  height:calc(100% + 44px);
+  border-radius:28px;
+  background:linear-gradient(90deg,
+    rgba(255,255,255,.58) 0%,
+    rgba(255,255,255,.44) 34%,
+    rgba(255,255,255,.27) 58%,
+    rgba(255,255,255,.12) 76%,
+    rgba(255,255,255,0) 100%);
+  z-index:1;
+  pointer-events:none;
+}
+
+.page-hero .eyebrow,
+.page-hero h1,
+.page-hero p,
+.home-page-hero .eyebrow,
+.home-page-hero h1,
+.home-page-hero p{
+  color:#ffffff !important;
+}
+
+.page-hero .eyebrow,
+.home-page-hero .eyebrow{
+  text-shadow:0 3px 16px rgba(0,0,0,.34) !important;
+}
+
+.page-hero h1,
+.home-page-hero h1{
+  text-shadow:0 4px 22px rgba(0,0,0,.42) !important;
+}
+
+.page-hero p,
+.home-page-hero p{
+  text-shadow:0 3px 16px rgba(0,0,0,.34) !important;
+}
+
+@media (max-width: 980px){
+  .page-hero .container,
+  .home-page-hero .container,
+  .page-hero-content{
+    padding:34px 26px 34px 14px !important;
+  }
+
+  .page-hero .container::before,
+  .home-page-hero .container::before,
+  .page-hero-content::before{
+    width:min(92vw, 620px);
+    left:-12px;
+  }
+}
+
+@media (max-width: 620px){
+  .page-hero .container,
+  .home-page-hero .container,
+  .page-hero-content{
+    padding:28px 18px 28px 10px !important;
+  }
+
+  .page-hero .container::before,
+  .home-page-hero .container::before,
+  .page-hero-content::before{
+    left:-8px;
+    width:calc(100% + 8px);
+    height:calc(100% + 28px);
+    border-radius:20px;
+    background:linear-gradient(90deg,
+      rgba(255,255,255,.60) 0%,
+      rgba(255,255,255,.46) 46%,
+      rgba(255,255,255,.24) 76%,
+      rgba(255,255,255,0) 100%);
+  }
+}
+
+/* =====================================================
+   V47 final hero refinement
+   - white heading / tagline / description on every banner
+   - soft white gradient panel on left side behind hero copy
+   - same treatment from home to contact page
+   ===================================================== */
+
+body[data-page="home"] .home-page-hero,
+body[data-page="donation"] .page-hero,
+body[data-page="about"] .page-hero,
+body[data-page="job"] .page-hero,
+body[data-page="admission"] .page-hero,
+body[data-page="portal"] .page-hero,
+body[data-page="contact"] .page-hero{
+  position:relative !important;
+  overflow:hidden !important;
+}
+
+/* remove old dark-only left overlay and replace with softer white panel */
+body[data-page="home"] .home-page-hero::before,
+body[data-page="donation"] .page-hero::before,
+body[data-page="about"] .page-hero::before,
+body[data-page="job"] .page-hero::before,
+body[data-page="admission"] .page-hero::before,
+body[data-page="portal"] .page-hero::before,
+body[data-page="contact"] .page-hero::before{
+  background:linear-gradient(90deg,
+    rgba(255,255,255,.72) 0%,
+    rgba(255,255,255,.64) 18%,
+    rgba(255,255,255,.52) 34%,
+    rgba(255,255,255,.34) 48%,
+    rgba(255,255,255,.14) 60%,
+    rgba(255,255,255,0) 72%) !important;
+  opacity:1 !important;
+}
+
+body[data-page="home"] .home-page-hero .container,
+body[data-page="home"] .home-page-hero .page-hero-content,
+body[data-page="donation"] .page-hero .container,
+body[data-page="about"] .page-hero .container,
+body[data-page="job"] .page-hero .container,
+body[data-page="admission"] .page-hero .container,
+body[data-page="portal"] .page-hero .container,
+body[data-page="contact"] .page-hero .container{
+  position:relative !important;
+  z-index:2 !important;
+}
+
+/* white gradient block at left similar to reference sample */
+body[data-page="home"] .home-page-hero .container::before,
+body[data-page="home"] .home-page-hero .page-hero-content::before,
+body[data-page="donation"] .page-hero .container::before,
+body[data-page="about"] .page-hero .container::before,
+body[data-page="job"] .page-hero .container::before,
+body[data-page="admission"] .page-hero .container::before,
+body[data-page="portal"] .page-hero .container::before,
+body[data-page="contact"] .page-hero .container::before{
+  content:"" !important;
+  position:absolute !important;
+  left:-12px !important;
+  top:50% !important;
+  transform:translateY(-50%) !important;
+  width:min(58vw, 700px) !important;
+  height:calc(100% + 60px) !important;
+  border-radius:26px !important;
+  background:linear-gradient(90deg,
+    rgba(255,255,255,.52) 0%,
+    rgba(255,255,255,.40) 28%,
+    rgba(255,255,255,.24) 48%,
+    rgba(255,255,255,.10) 62%,
+    rgba(255,255,255,0) 78%) !important;
+  z-index:-1 !important;
+  pointer-events:none !important;
+}
+
+body[data-page="home"] .home-page-hero .eyebrow,
+body[data-page="home"] .home-page-hero h1,
+body[data-page="home"] .home-page-hero p,
+body[data-page="donation"] .page-hero .eyebrow,
+body[data-page="donation"] .page-hero h1,
+body[data-page="donation"] .page-hero p,
+body[data-page="about"] .page-hero .eyebrow,
+body[data-page="about"] .page-hero h1,
+body[data-page="about"] .page-hero p,
+body[data-page="job"] .page-hero .eyebrow,
+body[data-page="job"] .page-hero h1,
+body[data-page="job"] .page-hero p,
+body[data-page="admission"] .page-hero .eyebrow,
+body[data-page="admission"] .page-hero h1,
+body[data-page="admission"] .page-hero p,
+body[data-page="portal"] .page-hero .eyebrow,
+body[data-page="portal"] .page-hero h1,
+body[data-page="portal"] .page-hero p,
+body[data-page="contact"] .page-hero .eyebrow,
+body[data-page="contact"] .page-hero h1,
+body[data-page="contact"] .page-hero p{
+  color:#ffffff !important;
+  text-shadow:0 3px 16px rgba(0,0,0,.32) !important;
+}
+
+body[data-page="home"] .home-page-hero .eyebrow::before,
+body[data-page="donation"] .page-hero .eyebrow::before,
+body[data-page="about"] .page-hero .eyebrow::before,
+body[data-page="job"] .page-hero .eyebrow::before,
+body[data-page="admission"] .page-hero .eyebrow::before,
+body[data-page="portal"] .page-hero .eyebrow::before,
+body[data-page="contact"] .page-hero .eyebrow::before{
+  background:#ffffff !important;
+}
+
+body[data-page="home"] .home-page-hero h1,
+body[data-page="donation"] .page-hero h1,
+body[data-page="about"] .page-hero h1,
+body[data-page="job"] .page-hero h1,
+body[data-page="admission"] .page-hero h1,
+body[data-page="portal"] .page-hero h1,
+body[data-page="contact"] .page-hero h1{
+  max-width:540px !important;
+}
+
+body[data-page="home"] .home-page-hero p,
+body[data-page="donation"] .page-hero p,
+body[data-page="about"] .page-hero p,
+body[data-page="job"] .page-hero p,
+body[data-page="admission"] .page-hero p,
+body[data-page="portal"] .page-hero p,
+body[data-page="contact"] .page-hero p{
+  max-width:470px !important;
+}
+
+@media (max-width: 900px){
+  body[data-page="home"] .home-page-hero .container::before,
+  body[data-page="home"] .home-page-hero .page-hero-content::before,
+  body[data-page="donation"] .page-hero .container::before,
+  body[data-page="about"] .page-hero .container::before,
+  body[data-page="job"] .page-hero .container::before,
+  body[data-page="admission"] .page-hero .container::before,
+  body[data-page="portal"] .page-hero .container::before,
+  body[data-page="contact"] .page-hero .container::before{
+    width:min(74vw, 580px) !important;
+    height:calc(100% + 42px) !important;
+  }
+}
+
+@media (max-width: 620px){
+  body[data-page="home"] .home-page-hero .container::before,
+  body[data-page="home"] .home-page-hero .page-hero-content::before,
+  body[data-page="donation"] .page-hero .container::before,
+  body[data-page="about"] .page-hero .container::before,
+  body[data-page="job"] .page-hero .container::before,
+  body[data-page="admission"] .page-hero .container::before,
+  body[data-page="portal"] .page-hero .container::before,
+  body[data-page="contact"] .page-hero .container::before{
+    left:-6px !important;
+    width:calc(100% + 6px) !important;
+    height:calc(100% + 28px) !important;
+    border-radius:18px !important;
+    background:linear-gradient(90deg,
+      rgba(255,255,255,.56) 0%,
+      rgba(255,255,255,.42) 44%,
+      rgba(255,255,255,.18) 72%,
+      rgba(255,255,255,0) 100%) !important;
+  }
+}
+
+/* =====================================================
+   V48 hero gradient refinement
+   - narrower white gradient area like user reference
+   - include jobs page in white hero text treatment
+   ===================================================== */
+
+body[data-page="home"] .home-page-hero::before,
+body[data-page="donation"] .page-hero::before,
+body[data-page="about"] .page-hero::before,
+body[data-page="jobs"] .page-hero::before,
+body[data-page="admission"] .page-hero::before,
+body[data-page="portal"] .page-hero::before,
+body[data-page="contact"] .page-hero::before{
+  background:none !important;
+}
+
+body[data-page="home"] .home-page-hero .container::before,
+body[data-page="home"] .home-page-hero .page-hero-content::before,
+body[data-page="donation"] .page-hero .container::before,
+body[data-page="about"] .page-hero .container::before,
+body[data-page="jobs"] .page-hero .container::before,
+body[data-page="admission"] .page-hero .container::before,
+body[data-page="portal"] .page-hero .container::before,
+body[data-page="contact"] .page-hero .container::before{
+  left:0 !important;
+  top:22px !important;
+  transform:none !important;
+  width:min(43vw, 470px) !important;
+  height:calc(100% - 44px) !important;
+  border-radius:0 28px 28px 0 !important;
+  background:linear-gradient(90deg,
+    rgba(255,255,255,.62) 0%,
+    rgba(255,255,255,.50) 38%,
+    rgba(255,255,255,.28) 62%,
+    rgba(255,255,255,.10) 82%,
+    rgba(255,255,255,0) 100%) !important;
+}
+
+body[data-page="home"] .home-page-hero .eyebrow,
+body[data-page="home"] .home-page-hero h1,
+body[data-page="home"] .home-page-hero p,
+body[data-page="donation"] .page-hero .eyebrow,
+body[data-page="donation"] .page-hero h1,
+body[data-page="donation"] .page-hero p,
+body[data-page="about"] .page-hero .eyebrow,
+body[data-page="about"] .page-hero h1,
+body[data-page="about"] .page-hero p,
+body[data-page="jobs"] .page-hero .eyebrow,
+body[data-page="jobs"] .page-hero h1,
+body[data-page="jobs"] .page-hero p,
+body[data-page="admission"] .page-hero .eyebrow,
+body[data-page="admission"] .page-hero h1,
+body[data-page="admission"] .page-hero p,
+body[data-page="portal"] .page-hero .eyebrow,
+body[data-page="portal"] .page-hero h1,
+body[data-page="portal"] .page-hero p,
+body[data-page="contact"] .page-hero .eyebrow,
+body[data-page="contact"] .page-hero h1,
+body[data-page="contact"] .page-hero p{
+  color:#ffffff !important;
+  text-shadow:0 4px 18px rgba(0,0,0,.32) !important;
+}
+
+body[data-page="home"] .home-page-hero .eyebrow::before,
+body[data-page="donation"] .page-hero .eyebrow::before,
+body[data-page="about"] .page-hero .eyebrow::before,
+body[data-page="jobs"] .page-hero .eyebrow::before,
+body[data-page="admission"] .page-hero .eyebrow::before,
+body[data-page="portal"] .page-hero .eyebrow::before,
+body[data-page="contact"] .page-hero .eyebrow::before{
+  background:#ffffff !important;
+}
+
+@media (max-width: 900px){
+  body[data-page="home"] .home-page-hero .container::before,
+  body[data-page="home"] .home-page-hero .page-hero-content::before,
+  body[data-page="donation"] .page-hero .container::before,
+  body[data-page="about"] .page-hero .container::before,
+  body[data-page="jobs"] .page-hero .container::before,
+  body[data-page="admission"] .page-hero .container::before,
+  body[data-page="portal"] .page-hero .container::before,
+  body[data-page="contact"] .page-hero .container::before{
+    width:min(52vw, 420px) !important;
+  }
+}
+
+@media (max-width: 620px){
+  body[data-page="home"] .home-page-hero .container::before,
+  body[data-page="home"] .home-page-hero .page-hero-content::before,
+  body[data-page="donation"] .page-hero .container::before,
+  body[data-page="about"] .page-hero .container::before,
+  body[data-page="jobs"] .page-hero .container::before,
+  body[data-page="admission"] .page-hero .container::before,
+  body[data-page="portal"] .page-hero .container::before,
+  body[data-page="contact"] .page-hero .container::before{
+    top:18px !important;
+    left:0 !important;
+    width:min(60vw, 340px) !important;
+    height:calc(100% - 36px) !important;
+    border-radius:0 22px 22px 0 !important;
+    background:linear-gradient(90deg,
+      rgba(255,255,255,.62) 0%,
+      rgba(255,255,255,.48) 44%,
+      rgba(255,255,255,.24) 74%,
+      rgba(255,255,255,0) 100%) !important;
+  }
+}
+
+/* =====================================================
+   V49 hero white gradient sizing tweak
+   - match the user's reference more closely
+   - keep only a limited left-side white gradient panel
+   ===================================================== */
+
+body[data-page="home"] .home-page-hero .container::before,
+body[data-page="home"] .home-page-hero .page-hero-content::before,
+body[data-page="donation"] .page-hero .container::before,
+body[data-page="about"] .page-hero .container::before,
+body[data-page="jobs"] .page-hero .container::before,
+body[data-page="admission"] .page-hero .container::before,
+body[data-page="portal"] .page-hero .container::before,
+body[data-page="contact"] .page-hero .container::before{
+  left:clamp(18px,4.6vw,68px) !important;
+  top:24px !important;
+  width:min(39vw, 380px) !important;
+  max-width:calc(100% - clamp(18px,4.6vw,68px) - 18px) !important;
+  height:calc(100% - 48px) !important;
+  border-radius:0 24px 24px 0 !important;
+  background:linear-gradient(90deg,
+    rgba(255,255,255,.72) 0%,
+    rgba(255,255,255,.62) 42%,
+    rgba(255,255,255,.36) 70%,
+    rgba(255,255,255,.14) 86%,
+    rgba(255,255,255,0) 100%) !important;
+}
+
+@media (max-width: 900px){
+  body[data-page="home"] .home-page-hero .container::before,
+  body[data-page="home"] .home-page-hero .page-hero-content::before,
+  body[data-page="donation"] .page-hero .container::before,
+  body[data-page="about"] .page-hero .container::before,
+  body[data-page="jobs"] .page-hero .container::before,
+  body[data-page="admission"] .page-hero .container::before,
+  body[data-page="portal"] .page-hero .container::before,
+  body[data-page="contact"] .page-hero .container::before{
+    left:clamp(14px,4vw,42px) !important;
+    width:min(46vw, 340px) !important;
+    max-width:calc(100% - clamp(14px,4vw,42px) - 14px) !important;
+  }
+}
+
+@media (max-width: 620px){
+  body[data-page="home"] .home-page-hero .container::before,
+  body[data-page="home"] .home-page-hero .page-hero-content::before,
+  body[data-page="donation"] .page-hero .container::before,
+  body[data-page="about"] .page-hero .container::before,
+  body[data-page="jobs"] .page-hero .container::before,
+  body[data-page="admission"] .page-hero .container::before,
+  body[data-page="portal"] .page-hero .container::before,
+  body[data-page="contact"] .page-hero .container::before{
+    left:10px !important;
+    top:18px !important;
+    width:min(63vw, 305px) !important;
+    max-width:calc(100% - 20px) !important;
+    height:calc(100% - 36px) !important;
+    border-radius:0 20px 20px 0 !important;
+    background:linear-gradient(90deg,
+      rgba(255,255,255,.74) 0%,
+      rgba(255,255,255,.60) 46%,
+      rgba(255,255,255,.30) 76%,
+      rgba(255,255,255,0) 100%) !important;
+  }
+}
+
+/* =====================================================
+   V50 hero white gradient width matched closer to user reference
+   - same across home + inner pages
+   - limited white gradient panel only over the left content area
+   ===================================================== */
+body[data-page="home"] .home-page-hero .container::before,
+body[data-page="home"] .home-page-hero .page-hero-content::before,
+body[data-page="donation"] .page-hero .container::before,
+body[data-page="about"] .page-hero .container::before,
+body[data-page="jobs"] .page-hero .container::before,
+body[data-page="admission"] .page-hero .container::before,
+body[data-page="portal"] .page-hero .container::before,
+body[data-page="contact"] .page-hero .container::before {
+  left: clamp(18px, 4vw, 70px) !important;
+  top: 22px !important;
+  width: min(53%, 430px) !important;
+  max-width: calc(100% - clamp(18px, 4vw, 70px) - 18px) !important;
+  height: calc(100% - 44px) !important;
+  border-radius: 0 24px 24px 0 !important;
+  background: linear-gradient(90deg,
+    rgba(255,255,255,0.30) 0%,
+    rgba(255,255,255,0.68) 14%,
+    rgba(255,255,255,0.78) 42%,
+    rgba(255,255,255,0.72) 60%,
+    rgba(255,255,255,0.45) 79%,
+    rgba(255,255,255,0.14) 91%,
+    rgba(255,255,255,0.00) 100%) !important;
+}
+
+@media (max-width: 900px){
+  body[data-page="home"] .home-page-hero .container::before,
+  body[data-page="home"] .home-page-hero .page-hero-content::before,
+  body[data-page="donation"] .page-hero .container::before,
+  body[data-page="about"] .page-hero .container::before,
+  body[data-page="jobs"] .page-hero .container::before,
+  body[data-page="admission"] .page-hero .container::before,
+  body[data-page="portal"] .page-hero .container::before,
+  body[data-page="contact"] .page-hero .container::before {
+    left: 14px !important;
+    width: min(58%, 390px) !important;
+    max-width: calc(100% - 28px) !important;
+  }
+}
+
+@media (max-width: 620px){
+  body[data-page="home"] .home-page-hero .container::before,
+  body[data-page="home"] .home-page-hero .page-hero-content::before,
+  body[data-page="donation"] .page-hero .container::before,
+  body[data-page="about"] .page-hero .container::before,
+  body[data-page="jobs"] .page-hero .container::before,
+  body[data-page="admission"] .page-hero .container::before,
+  body[data-page="portal"] .page-hero .container::before,
+  body[data-page="contact"] .page-hero .container::before {
+    left: 10px !important;
+    top: 18px !important;
+    width: min(60%, 320px) !important;
+    max-width: calc(100% - 20px) !important;
+    height: calc(100% - 36px) !important;
+    border-radius: 0 20px 20px 0 !important;
+    background: linear-gradient(90deg,
+      rgba(255,255,255,0.34) 0%,
+      rgba(255,255,255,0.70) 14%,
+      rgba(255,255,255,0.78) 46%,
+      rgba(255,255,255,0.70) 63%,
+      rgba(255,255,255,0.36) 83%,
+      rgba(255,255,255,0.00) 100%) !important;
+  }
+}
+
+/* =====================================================
+   V52 final white gradient placement
+   Only cover the banner image section area from the reference,
+   not the full text background block.
+   ===================================================== */
+body[data-page="home"] .home-page-hero .container::before,
+body[data-page="home"] .home-page-hero .page-hero-content::before,
+body[data-page="donation"] .page-hero .container::before,
+body[data-page="about"] .page-hero .container::before,
+body[data-page="jobs"] .page-hero .container::before,
+body[data-page="admission"] .page-hero .container::before,
+body[data-page="portal"] .page-hero .container::before,
+body[data-page="contact"] .page-hero .container::before {
+  left: clamp(78px, 11vw, 132px) !important;
+  top: 0 !important;
+  transform: none !important;
+  width: clamp(280px, 47vw, 365px) !important;
+  max-width: calc(100% - clamp(78px, 11vw, 132px) - 18px) !important;
+  height: 100% !important;
+  border-radius: 0 !important;
+  background: linear-gradient(90deg,
+    rgba(255,255,255,0.10) 0%,
+    rgba(255,255,255,0.42) 16%,
+    rgba(255,255,255,0.74) 38%,
+    rgba(255,255,255,0.80) 50%,
+    rgba(255,255,255,0.72) 62%,
+    rgba(255,255,255,0.38) 82%,
+    rgba(255,255,255,0.00) 100%) !important;
+}
+
+@media (max-width: 900px){
+  body[data-page="home"] .home-page-hero .container::before,
+  body[data-page="home"] .home-page-hero .page-hero-content::before,
+  body[data-page="donation"] .page-hero .container::before,
+  body[data-page="about"] .page-hero .container::before,
+  body[data-page="jobs"] .page-hero .container::before,
+  body[data-page="admission"] .page-hero .container::before,
+  body[data-page="portal"] .page-hero .container::before,
+  body[data-page="contact"] .page-hero .container::before {
+    left: 62px !important;
+    width: min(48vw, 320px) !important;
+    max-width: calc(100% - 76px) !important;
+  }
+}
+
+@media (max-width: 620px){
+  body[data-page="home"] .home-page-hero .container::before,
+  body[data-page="home"] .home-page-hero .page-hero-content::before,
+  body[data-page="donation"] .page-hero .container::before,
+  body[data-page="about"] .page-hero .container::before,
+  body[data-page="jobs"] .page-hero .container::before,
+  body[data-page="admission"] .page-hero .container::before,
+  body[data-page="portal"] .page-hero .container::before,
+  body[data-page="contact"] .page-hero .container::before {
+    left: 52px !important;
+    width: min(50vw, 286px) !important;
+    max-width: calc(100% - 62px) !important;
+    background: linear-gradient(90deg,
+      rgba(255,255,255,0.10) 0%,
+      rgba(255,255,255,0.40) 16%,
+      rgba(255,255,255,0.72) 38%,
+      rgba(255,255,255,0.79) 50%,
+      rgba(255,255,255,0.70) 62%,
+      rgba(255,255,255,0.34) 82%,
+      rgba(255,255,255,0.00) 100%) !important;
+  }
+}
+
+/* =====================================================
+   V53 — remove white hero gradients from every page
+   Keep all other website styling and banner content unchanged.
+   ===================================================== */
+.page-hero .container::before,
+.home-page-hero .container::before,
+.page-hero-content::before,
+body[data-page="home"] .home-page-hero .container::before,
+body[data-page="home"] .home-page-hero .page-hero-content::before,
+body[data-page="donation"] .page-hero .container::before,
+body[data-page="about"] .page-hero .container::before,
+body[data-page="jobs"] .page-hero .container::before,
+body[data-page="admission"] .page-hero .container::before,
+body[data-page="portal"] .page-hero .container::before,
+body[data-page="contact"] .page-hero .container::before {
+  content:none !important;
+  display:none !important;
+  background:none !important;
+  opacity:0 !important;
+  box-shadow:none !important;
+}
+
+/* =====================================================
+   V55 — white gradient over only the left half image area
+   Match the latest user reference: the gradient should cover only
+   approximately the left half of the banner image on every page.
+   ===================================================== */
+
+/* keep old content-box gradients disabled */
+.page-hero .container::before,
+.home-page-hero .container::before,
+.page-hero-content::before,
+body[data-page="home"] .home-page-hero .container::before,
+body[data-page="home"] .home-page-hero .page-hero-content::before,
+body[data-page="donation"] .page-hero .container::before,
+body[data-page="about"] .page-hero .container::before,
+body[data-page="jobs"] .page-hero .container::before,
+body[data-page="admission"] .page-hero .container::before,
+body[data-page="portal"] .page-hero .container::before,
+body[data-page="contact"] .page-hero .container::before {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+
+/* apply the white gradient only over the left half of the banner image */
+body[data-page="home"] .home-page-hero::before,
+body[data-page="donation"] .page-hero::before,
+body[data-page="about"] .page-hero::before,
+body[data-page="jobs"] .page-hero::before,
+body[data-page="admission"] .page-hero::before,
+body[data-page="portal"] .page-hero::before,
+body[data-page="contact"] .page-hero::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 auto 0 0 !important;
+  width: 50% !important;
+  max-width: 50% !important;
+  height: 100% !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+  background: linear-gradient(90deg,
+    rgba(255,255,255,0.18) 0%,
+    rgba(255,255,255,0.18) 12%,
+    rgba(255,255,255,0.66) 12%,
+    rgba(255,255,255,0.66) 56%,
+    rgba(255,255,255,0.50) 74%,
+    rgba(255,255,255,0.22) 90%,
+    rgba(255,255,255,0.00) 100%) !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* keep hero copy above the gradient */
+.page-hero .container,
+.home-page-hero .container,
+.page-hero-content {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+@media (max-width: 900px) {
+  body[data-page="home"] .home-page-hero::before,
+  body[data-page="donation"] .page-hero::before,
+  body[data-page="about"] .page-hero::before,
+  body[data-page="jobs"] .page-hero::before,
+  body[data-page="admission"] .page-hero::before,
+  body[data-page="portal"] .page-hero::before,
+  body[data-page="contact"] .page-hero::before {
+    width: 52% !important;
+    max-width: 52% !important;
+    background: linear-gradient(90deg,
+      rgba(255,255,255,0.18) 0%,
+      rgba(255,255,255,0.18) 12%,
+      rgba(255,255,255,0.64) 12%,
+      rgba(255,255,255,0.64) 58%,
+      rgba(255,255,255,0.48) 76%,
+      rgba(255,255,255,0.20) 90%,
+      rgba(255,255,255,0.00) 100%) !important;
+  }
+}
+
+@media (max-width: 620px) {
+  body[data-page="home"] .home-page-hero::before,
+  body[data-page="donation"] .page-hero::before,
+  body[data-page="about"] .page-hero::before,
+  body[data-page="jobs"] .page-hero::before,
+  body[data-page="admission"] .page-hero::before,
+  body[data-page="portal"] .page-hero::before,
+  body[data-page="contact"] .page-hero::before {
+    width: 54% !important;
+    max-width: 54% !important;
+    background: linear-gradient(90deg,
+      rgba(255,255,255,0.20) 0%,
+      rgba(255,255,255,0.20) 12%,
+      rgba(255,255,255,0.62) 12%,
+      rgba(255,255,255,0.62) 60%,
+      rgba(255,255,255,0.44) 78%,
+      rgba(255,255,255,0.16) 92%,
+      rgba(255,255,255,0.00) 100%) !important;
+  }
+}
+
+/* =====================================================
+   V56 — white gradient behind hero text area only
+   User requested: place a white gradient on the background
+   of the tagline/text area on every banner, and keep it
+   looking clean and balanced.
+   ===================================================== */
+
+/* remove the full image-side white overlay from V55 */
+body[data-page="home"] .home-page-hero::before,
+body[data-page="donation"] .page-hero::before,
+body[data-page="about"] .page-hero::before,
+body[data-page="job"] .page-hero::before,
+body[data-page="jobs"] .page-hero::before,
+body[data-page="admission"] .page-hero::before,
+body[data-page="portal"] .page-hero::before,
+body[data-page="contact"] .page-hero::before {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+
+/* keep hero copy above the image */
+body[data-page="home"] .home-page-hero .container,
+body[data-page="home"] .home-page-hero .page-hero-content,
+body[data-page="donation"] .page-hero .container,
+body[data-page="about"] .page-hero .container,
+body[data-page="job"] .page-hero .container,
+body[data-page="jobs"] .page-hero .container,
+body[data-page="admission"] .page-hero .container,
+body[data-page="portal"] .page-hero .container,
+body[data-page="contact"] .page-hero .container {
+  position: relative !important;
+  z-index: 2 !important;
+  overflow: visible !important;
+}
+
+/* elegant white gradient panel only behind the hero text block */
+body[data-page="home"] .home-page-hero .container::before,
+body[data-page="home"] .home-page-hero .page-hero-content::before,
+body[data-page="donation"] .page-hero .container::before,
+body[data-page="about"] .page-hero .container::before,
+body[data-page="job"] .page-hero .container::before,
+body[data-page="jobs"] .page-hero .container::before,
+body[data-page="admission"] .page-hero .container::before,
+body[data-page="portal"] .page-hero .container::before,
+body[data-page="contact"] .page-hero .container::before {
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  left: clamp(6px, 1.5vw, 20px) !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: min(62vw, 760px) !important;
+  max-width: calc(100% - clamp(6px, 1.5vw, 20px) - 10px) !important;
+  height: calc(100% + 44px) !important;
+  border-radius: 0 30px 30px 0 !important;
+  background: linear-gradient(90deg,
+    rgba(255,255,255,0.68) 0%,
+    rgba(255,255,255,0.56) 26%,
+    rgba(255,255,255,0.34) 52%,
+    rgba(255,255,255,0.16) 72%,
+    rgba(255,255,255,0.04) 88%,
+    rgba(255,255,255,0.00) 100%) !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
+  box-shadow: none !important;
+}
+
+/* keep all hero text white and readable */
+body[data-page="home"] .home-page-hero .eyebrow,
+body[data-page="home"] .home-page-hero h1,
+body[data-page="home"] .home-page-hero p,
+body[data-page="donation"] .page-hero .eyebrow,
+body[data-page="donation"] .page-hero h1,
+body[data-page="donation"] .page-hero p,
+body[data-page="about"] .page-hero .eyebrow,
+body[data-page="about"] .page-hero h1,
+body[data-page="about"] .page-hero p,
+body[data-page="job"] .page-hero .eyebrow,
+body[data-page="job"] .page-hero h1,
+body[data-page="job"] .page-hero p,
+body[data-page="jobs"] .page-hero .eyebrow,
+body[data-page="jobs"] .page-hero h1,
+body[data-page="jobs"] .page-hero p,
+body[data-page="admission"] .page-hero .eyebrow,
+body[data-page="admission"] .page-hero h1,
+body[data-page="admission"] .page-hero p,
+body[data-page="portal"] .page-hero .eyebrow,
+body[data-page="portal"] .page-hero h1,
+body[data-page="portal"] .page-hero p,
+body[data-page="contact"] .page-hero .eyebrow,
+body[data-page="contact"] .page-hero h1,
+body[data-page="contact"] .page-hero p {
+  color: #ffffff !important;
+}
+
+body[data-page="home"] .home-page-hero .eyebrow::before,
+body[data-page="donation"] .page-hero .eyebrow::before,
+body[data-page="about"] .page-hero .eyebrow::before,
+body[data-page="job"] .page-hero .eyebrow::before,
+body[data-page="jobs"] .page-hero .eyebrow::before,
+body[data-page="admission"] .page-hero .eyebrow::before,
+body[data-page="portal"] .page-hero .eyebrow::before,
+body[data-page="contact"] .page-hero .eyebrow::before {
+  background: #ffffff !important;
+}
+
+@media (max-width: 900px) {
+  body[data-page="home"] .home-page-hero .container::before,
+  body[data-page="home"] .home-page-hero .page-hero-content::before,
+  body[data-page="donation"] .page-hero .container::before,
+  body[data-page="about"] .page-hero .container::before,
+  body[data-page="job"] .page-hero .container::before,
+  body[data-page="jobs"] .page-hero .container::before,
+  body[data-page="admission"] .page-hero .container::before,
+  body[data-page="portal"] .page-hero .container::before,
+  body[data-page="contact"] .page-hero .container::before {
+    width: min(72vw, 620px) !important;
+    height: calc(100% + 34px) !important;
+    border-radius: 0 24px 24px 0 !important;
+    background: linear-gradient(90deg,
+      rgba(255,255,255,0.66) 0%,
+      rgba(255,255,255,0.54) 30%,
+      rgba(255,255,255,0.32) 56%,
+      rgba(255,255,255,0.14) 76%,
+      rgba(255,255,255,0.00) 100%) !important;
+  }
+}
+
+@media (max-width: 620px) {
+  body[data-page="home"] .home-page-hero .container::before,
+  body[data-page="home"] .home-page-hero .page-hero-content::before,
+  body[data-page="donation"] .page-hero .container::before,
+  body[data-page="about"] .page-hero .container::before,
+  body[data-page="job"] .page-hero .container::before,
+  body[data-page="jobs"] .page-hero .container::before,
+  body[data-page="admission"] .page-hero .container::before,
+  body[data-page="portal"] .page-hero .container::before,
+  body[data-page="contact"] .page-hero .container::before {
+    left: 4px !important;
+    width: min(86vw, 420px) !important;
+    max-width: calc(100% - 8px) !important;
+    height: calc(100% + 18px) !important;
+    border-radius: 0 18px 18px 0 !important;
+    background: linear-gradient(90deg,
+      rgba(255,255,255,0.68) 0%,
+      rgba(255,255,255,0.56) 34%,
+      rgba(255,255,255,0.30) 64%,
+      rgba(255,255,255,0.10) 84%,
+      rgba(255,255,255,0.00) 100%) !important;
+  }
+}
+
+/* V57 — add 5px right-side spacing to banner copy */
+.page-hero .container,
+.home-page-hero .container,
+.page-hero-content{
+  margin-right:5px !important;
+}
+
+/* =====================================================
+   V58 — correct 5px left shift + clean white gradient behind banner copy
+   ===================================================== */
+
+/* Correct the previous spacing: keep the container centered and shift copy 5px LEFT. */
+.page-hero .container,
+.home-page-hero .container,
+.page-hero-content{
+  margin-left:auto !important;
+  margin-right:auto !important;
+  left:-5px !important;
+}
+
+/* Remove any full-banner/image overlay so only the copy area receives the white gradient. */
+body[data-page="home"] .home-page-hero::before,
+body[data-page="donation"] .page-hero::before,
+body[data-page="about"] .page-hero::before,
+body[data-page="job"] .page-hero::before,
+body[data-page="jobs"] .page-hero::before,
+body[data-page="admission"] .page-hero::before,
+body[data-page="portal"] .page-hero::before,
+body[data-page="contact"] .page-hero::before{
+  content:none !important;
+  display:none !important;
+  background:none !important;
+}
+
+/* A soft, professional white gradient only behind tagline + heading + description. */
+body[data-page="home"] .home-page-hero .container::before,
+body[data-page="home"] .home-page-hero .page-hero-content::before,
+body[data-page="donation"] .page-hero .container::before,
+body[data-page="about"] .page-hero .container::before,
+body[data-page="job"] .page-hero .container::before,
+body[data-page="jobs"] .page-hero .container::before,
+body[data-page="admission"] .page-hero .container::before,
+body[data-page="portal"] .page-hero .container::before,
+body[data-page="contact"] .page-hero .container::before{
+  content:"" !important;
+  display:block !important;
+  position:absolute !important;
+  left:-10px !important;
+  top:50% !important;
+  transform:translateY(-50%) !important;
+  width:min(66vw, 760px) !important;
+  max-width:calc(100% + 10px) !important;
+  height:calc(100% + 24px) !important;
+  border-radius:0 26px 26px 0 !important;
+  background:linear-gradient(90deg,
+    rgba(255,255,255,.28) 0%,
+    rgba(255,255,255,.24) 30%,
+    rgba(255,255,255,.16) 55%,
+    rgba(255,255,255,.08) 73%,
+    rgba(255,255,255,.025) 88%,
+    rgba(255,255,255,0) 100%) !important;
+  z-index:-1 !important;
+  pointer-events:none !important;
+  box-shadow:none !important;
+}
+
+/* Keep banner copy white and readable on all pages. */
+body[data-page="home"] .home-page-hero .eyebrow,
+body[data-page="home"] .home-page-hero h1,
+body[data-page="home"] .home-page-hero p,
+body[data-page="donation"] .page-hero .eyebrow,
+body[data-page="donation"] .page-hero h1,
+body[data-page="donation"] .page-hero p,
+body[data-page="about"] .page-hero .eyebrow,
+body[data-page="about"] .page-hero h1,
+body[data-page="about"] .page-hero p,
+body[data-page="job"] .page-hero .eyebrow,
+body[data-page="job"] .page-hero h1,
+body[data-page="job"] .page-hero p,
+body[data-page="jobs"] .page-hero .eyebrow,
+body[data-page="jobs"] .page-hero h1,
+body[data-page="jobs"] .page-hero p,
+body[data-page="admission"] .page-hero .eyebrow,
+body[data-page="admission"] .page-hero h1,
+body[data-page="admission"] .page-hero p,
+body[data-page="portal"] .page-hero .eyebrow,
+body[data-page="portal"] .page-hero h1,
+body[data-page="portal"] .page-hero p,
+body[data-page="contact"] .page-hero .eyebrow,
+body[data-page="contact"] .page-hero h1,
+body[data-page="contact"] .page-hero p{
+  color:#fff !important;
+  text-shadow:0 3px 14px rgba(0,0,0,.42) !important;
+}
+
+body[data-page="home"] .home-page-hero .eyebrow::before,
+body[data-page="donation"] .page-hero .eyebrow::before,
+body[data-page="about"] .page-hero .eyebrow::before,
+body[data-page="job"] .page-hero .eyebrow::before,
+body[data-page="jobs"] .page-hero .eyebrow::before,
+body[data-page="admission"] .page-hero .eyebrow::before,
+body[data-page="portal"] .page-hero .eyebrow::before,
+body[data-page="contact"] .page-hero .eyebrow::before{
+  background:#fff !important;
+}
+
+@media (max-width:900px){
+  body[data-page="home"] .home-page-hero .container::before,
+  body[data-page="home"] .home-page-hero .page-hero-content::before,
+  body[data-page="donation"] .page-hero .container::before,
+  body[data-page="about"] .page-hero .container::before,
+  body[data-page="job"] .page-hero .container::before,
+  body[data-page="jobs"] .page-hero .container::before,
+  body[data-page="admission"] .page-hero .container::before,
+  body[data-page="portal"] .page-hero .container::before,
+  body[data-page="contact"] .page-hero .container::before{
+    width:min(76vw, 620px) !important;
+    height:calc(100% + 18px) !important;
+  }
+}
+
+@media (max-width:620px){
+  .page-hero .container,
+  .home-page-hero .container,
+  .page-hero-content{
+    left:-5px !important;
+  }
+
+  body[data-page="home"] .home-page-hero .container::before,
+  body[data-page="home"] .home-page-hero .page-hero-content::before,
+  body[data-page="donation"] .page-hero .container::before,
+  body[data-page="about"] .page-hero .container::before,
+  body[data-page="job"] .page-hero .container::before,
+  body[data-page="jobs"] .page-hero .container::before,
+  body[data-page="admission"] .page-hero .container::before,
+  body[data-page="portal"] .page-hero .container::before,
+  body[data-page="contact"] .page-hero .container::before{
+    left:-6px !important;
+    width:min(90vw, 430px) !important;
+    max-width:calc(100% + 6px) !important;
+    height:calc(100% + 14px) !important;
+    border-radius:0 18px 18px 0 !important;
+    background:linear-gradient(90deg,
+      rgba(255,255,255,.30) 0%,
+      rgba(255,255,255,.25) 34%,
+      rgba(255,255,255,.15) 64%,
+      rgba(255,255,255,.06) 82%,
+      rgba(255,255,255,0) 100%) !important;
+  }
+}
+
+/* =====================================================
+   V59 — unified hero font/size, Home subject shift, and banner CTAs
+   ===================================================== */
+
+/* Use the website's own Poppins font throughout every banner. */
+.page-hero .eyebrow,
+.home-page-hero .eyebrow,
+.page-hero h1,
+.home-page-hero h1,
+.page-hero p,
+.home-page-hero p{
+  font-family:'Poppins',Arial,sans-serif !important;
+}
+
+/* Same readable sizing on Home and every inner-page banner. */
+.page-hero .eyebrow,
+.home-page-hero .eyebrow{
+  font-size:.94rem !important;
+  line-height:1.25 !important;
+  font-weight:800 !important;
+  letter-spacing:.15em !important;
+  margin-bottom:10px !important;
+}
+
+.page-hero h1,
+.home-page-hero h1{
+  font-size:clamp(3.35rem,4.9vw,4.85rem) !important;
+  line-height:1.03 !important;
+  font-weight:800 !important;
+  letter-spacing:-.035em !important;
+  max-width:620px !important;
+  margin:.28rem 0 .82rem !important;
+}
+
+.page-hero p,
+.home-page-hero p{
+  font-size:1.12rem !important;
+  line-height:1.58 !important;
+  font-weight:500 !important;
+  max-width:590px !important;
+  margin:0 !important;
+}
+
+/* Match the Home banner CTA pair on Donation, About, Jobs, Admission and Portal. */
+.page-hero .hero-actions,
+.home-page-hero .hero-actions{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  gap:12px !important;
+  flex-wrap:wrap !important;
+  margin-top:22px !important;
+}
+
+.page-hero .hero-actions-center,
+.home-page-hero .hero-actions-center{
+  justify-content:flex-start !important;
+}
+
+/* Reframe the Home photograph so the student group sits farther right. */
+body[data-page="home"] .home-page-hero{
+  background-size:112% auto !important;
+  background-position:left center !important;
+}
+
+/* Align Home copy like the other page banners. */
+body[data-page="home"] .home-page-hero .container,
+body[data-page="home"] .home-page-hero .page-hero-content,
+body[data-page="donation"] .page-hero .container,
+body[data-page="about"] .page-hero .container,
+body[data-page="jobs"] .page-hero .container,
+body[data-page="admission"] .page-hero .container,
+body[data-page="portal"] .page-hero .container,
+body[data-page="contact"] .page-hero .container{
+  transform:translateY(-18px) !important;
+}
+
+@media (max-width:980px){
+  .page-hero h1,
+  .home-page-hero h1{
+    font-size:clamp(2.9rem,7vw,4rem) !important;
+    max-width:540px !important;
+  }
+  .page-hero p,
+  .home-page-hero p{
+    font-size:1.04rem !important;
+    max-width:520px !important;
+  }
+  body[data-page="home"] .home-page-hero{
+    background-size:cover !important;
+    background-position:36% center !important;
+  }
+}
+
+@media (max-width:620px){
+  .page-hero .eyebrow,
+  .home-page-hero .eyebrow{
+    font-size:.80rem !important;
+    letter-spacing:.13em !important;
+  }
+  .page-hero h1,
+  .home-page-hero h1{
+    font-size:2.72rem !important;
+    line-height:1.04 !important;
+    max-width:345px !important;
+  }
+  .page-hero p,
+  .home-page-hero p{
+    font-size:.98rem !important;
+    line-height:1.5 !important;
+    max-width:345px !important;
+  }
+  .page-hero .hero-actions,
+  .home-page-hero .hero-actions{
+    margin-top:18px !important;
+    gap:10px !important;
+  }
+  body[data-page="home"] .home-page-hero{
+    background-size:cover !important;
+    background-position:30% center !important;
+  }
+  body[data-page="home"] .home-page-hero .container,
+  body[data-page="home"] .home-page-hero .page-hero-content,
+  body[data-page="donation"] .page-hero .container,
+  body[data-page="about"] .page-hero .container,
+  body[data-page="jobs"] .page-hero .container,
+  body[data-page="admission"] .page-hero .container,
+  body[data-page="portal"] .page-hero .container,
+  body[data-page="contact"] .page-hero .container{
+    transform:none !important;
+  }
+}
+
+/* =====================================================
+   V60 — Home hero subject framing + copy alignment refinement
+   - students slightly smaller and farther right
+   - Home hero copy follows the exact same alignment/size system as inner pages
+   ===================================================== */
+
+body[data-page="home"] .home-page-hero{
+  background-image:url('images/school-hero-right-shift-fast.jpg') !important;
+  background-size:cover !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+}
+
+/* Keep Home copy aligned exactly like the other page banners. */
+body[data-page="home"] .home-page-hero .container,
+body[data-page="home"] .home-page-hero .page-hero-content{
+  transform:translateY(-18px) !important;
+  align-items:flex-start !important;
+  justify-content:center !important;
+  text-align:left !important;
+  max-width:none !important;
+}
+
+body[data-page="home"] .home-page-hero .eyebrow,
+body[data-page="home"] .home-page-hero h1,
+body[data-page="home"] .home-page-hero p{
+  text-align:left !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+
+body[data-page="home"] .home-page-hero h1{
+  max-width:620px !important;
+}
+
+body[data-page="home"] .home-page-hero p{
+  max-width:590px !important;
+}
+
+body[data-page="home"] .home-page-hero .hero-actions,
+body[data-page="home"] .home-page-hero .hero-actions-center{
+  justify-content:flex-start !important;
+}
+
+@media (max-width:980px){
+  body[data-page="home"] .home-page-hero{
+    background-position:center center !important;
+  }
+  body[data-page="home"] .home-page-hero .container,
+  body[data-page="home"] .home-page-hero .page-hero-content{
+    transform:translateY(-10px) !important;
+  }
+}
+
+@media (max-width:620px){
+  body[data-page="home"] .home-page-hero{
+    background-position:center center !important;
+  }
+  body[data-page="home"] .home-page-hero .container,
+  body[data-page="home"] .home-page-hero .page-hero-content{
+    transform:none !important;
+  }
+  body[data-page="home"] .home-page-hero h1,
+  body[data-page="home"] .home-page-hero p{
+    max-width:345px !important;
+  }
+}
+
+/* =====================================================
+   V61 — Home single banner + students smaller/right + unified hero typography
+   ===================================================== */
+
+/* Home uses one clean single photo only; no duplicated/repeated background. */
+body[data-page="home"] .home-page-hero{
+  background-image:url('images/school-hero-right-shift-fast.jpg') !important;
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
+  background-position:center center !important;
+}
+
+/* Final unified banner typography: Home through Contact use the same sizes. */
+.page-hero .eyebrow,
+.home-page-hero .eyebrow{
+  font-family:'Poppins',Arial,sans-serif !important;
+  font-size:.92rem !important;
+  line-height:1.25 !important;
+  font-weight:800 !important;
+  letter-spacing:.15em !important;
+  margin-bottom:10px !important;
+}
+
+.page-hero h1,
+.home-page-hero h1{
+  font-family:'Poppins',Arial,sans-serif !important;
+  font-size:clamp(3rem,4.25vw,4.25rem) !important;
+  line-height:1.04 !important;
+  font-weight:800 !important;
+  letter-spacing:-.035em !important;
+  max-width:590px !important;
+  margin:.24rem 0 .78rem !important;
+}
+
+.page-hero p,
+.home-page-hero p{
+  font-family:'Poppins',Arial,sans-serif !important;
+  font-size:1.05rem !important;
+  line-height:1.55 !important;
+  font-weight:500 !important;
+  max-width:555px !important;
+  margin:0 !important;
+}
+
+/* Align Home copy exactly like the other inner page banners. */
+body[data-page="home"] .home-page-hero .container,
+body[data-page="home"] .home-page-hero .page-hero-content{
+  transform:translateY(-18px) !important;
+  align-items:flex-start !important;
+  justify-content:center !important;
+  text-align:left !important;
+}
+
+body[data-page="home"] .home-page-hero .eyebrow,
+body[data-page="home"] .home-page-hero h1,
+body[data-page="home"] .home-page-hero p{
+  text-align:left !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+
+/* On the clean Home image, students are naturally smaller and positioned on the right. */
+body[data-page="home"] .home-page-hero{
+  background-position:center center !important;
+}
+
+@media (max-width:980px){
+  .page-hero .eyebrow,
+  .home-page-hero .eyebrow{
+    font-size:.84rem !important;
+  }
+  .page-hero h1,
+  .home-page-hero h1{
+    font-size:clamp(2.65rem,6vw,3.55rem) !important;
+    max-width:500px !important;
+  }
+  .page-hero p,
+  .home-page-hero p{
+    font-size:1rem !important;
+    max-width:490px !important;
+  }
+  body[data-page="home"] .home-page-hero .container,
+  body[data-page="home"] .home-page-hero .page-hero-content{
+    transform:translateY(-10px) !important;
+  }
+}
+
+@media (max-width:620px){
+  .page-hero .eyebrow,
+  .home-page-hero .eyebrow{
+    font-size:.76rem !important;
+    letter-spacing:.13em !important;
+  }
+  .page-hero h1,
+  .home-page-hero h1{
+    font-size:2.45rem !important;
+    line-height:1.05 !important;
+    max-width:330px !important;
+  }
+  .page-hero p,
+  .home-page-hero p{
+    font-size:.94rem !important;
+    line-height:1.5 !important;
+    max-width:330px !important;
+  }
+  body[data-page="home"] .home-page-hero{
+    background-position:56% center !important;
+  }
+  body[data-page="home"] .home-page-hero .container,
+  body[data-page="home"] .home-page-hero .page-hero-content{
+    transform:none !important;
+  }
+}
+
+/* =====================================================
+   V62 — Hero alignment + themed left-side gradient
+   - Home copy shifted slightly left
+   - Home copy block gets equal top/bottom spacing
+   - All page banners receive a left-side brand-matching gradient
+   ===================================================== */
+
+/* Re-enable a clean left-side gradient overlay on every banner.
+   It uses the website theme colors and fades out before the image midpoint. */
+.page-hero,
+.home-page-hero{
+  position:relative;
+}
+
+.page-hero::before,
+.home-page-hero::before{
+  content:'' !important;
+  display:block !important;
+  position:absolute !important;
+  left:0 !important;
+  top:0 !important;
+  bottom:0 !important;
+  width:min(56%, 760px) !important;
+  background:linear-gradient(90deg,
+    rgba(9, 58, 93, 0.82) 0%,
+    rgba(8, 88, 108, 0.66) 26%,
+    rgba(7, 145, 128, 0.28) 52%,
+    rgba(7, 145, 128, 0.00) 100%) !important;
+  pointer-events:none !important;
+  z-index:1 !important;
+}
+
+.page-hero .container,
+.home-page-hero .container,
+.page-hero-content{
+  position:relative !important;
+  z-index:2 !important;
+}
+
+/* Home hero: move the text group slightly left and keep top/bottom spacing balanced. */
+body[data-page="home"] .home-page-hero .container,
+body[data-page="home"] .home-page-hero .page-hero-content{
+  min-height:460px !important;
+  padding-top:54px !important;
+  padding-bottom:54px !important;
+  justify-content:center !important;
+  align-items:flex-start !important;
+  text-align:left !important;
+  transform:translateX(-8px) !important;
+}
+
+body[data-page="home"] .home-page-hero .eyebrow,
+body[data-page="home"] .home-page-hero h1,
+body[data-page="home"] .home-page-hero p,
+body[data-page="home"] .home-page-hero .hero-actions,
+body[data-page="home"] .home-page-hero .hero-actions-center{
+  margin-left:0 !important;
+  margin-right:0 !important;
+  text-align:left !important;
+  justify-content:flex-start !important;
+}
+
+/* Keep the same treatment responsive on smaller screens. */
+@media (max-width: 980px){
+  .page-hero::before,
+  .home-page-hero::before{
+    width:min(62%, 620px) !important;
+    background:linear-gradient(90deg,
+      rgba(9, 58, 93, 0.80) 0%,
+      rgba(8, 88, 108, 0.62) 32%,
+      rgba(7, 145, 128, 0.22) 58%,
+      rgba(7, 145, 128, 0.00) 100%) !important;
+  }
+
+  body[data-page="home"] .home-page-hero .container,
+  body[data-page="home"] .home-page-hero .page-hero-content{
+    min-height:420px !important;
+    padding-top:46px !important;
+    padding-bottom:46px !important;
+    transform:translateX(-6px) !important;
+  }
+}
+
+@media (max-width: 620px){
+  .page-hero::before,
+  .home-page-hero::before{
+    width:100% !important;
+    background:linear-gradient(90deg,
+      rgba(9, 58, 93, 0.82) 0%,
+      rgba(8, 88, 108, 0.64) 42%,
+      rgba(7, 145, 128, 0.16) 76%,
+      rgba(7, 145, 128, 0.00) 100%) !important;
+  }
+
+  body[data-page="home"] .home-page-hero .container,
+  body[data-page="home"] .home-page-hero .page-hero-content{
+    min-height:430px !important;
+    padding-top:34px !important;
+    padding-bottom:34px !important;
+    transform:translateX(-3px) !important;
+  }
+}
+
+/* =====================================================
+   V63 — Final hero consistency refinement
+   - Use the website's own font on every banner
+   - Same hero text sizing on every page
+   - Equal top/bottom spacing on all banners
+   - Theme-matching left gradient only (no white copy panel)
+   - Home image reframed so students sit farther right
+   - Home text constrained to a safe left zone so it never sits over students
+   ===================================================== */
+
+/* Remove all old copy-area white gradient panels. */
+.page-hero .container::before,
+.home-page-hero .container::before,
+.page-hero-content::before,
+body[data-page="home"] .home-page-hero .container::before,
+body[data-page="home"] .home-page-hero .page-hero-content::before,
+body[data-page="donation"] .page-hero .container::before,
+body[data-page="about"] .page-hero .container::before,
+body[data-page="jobs"] .page-hero .container::before,
+body[data-page="admission"] .page-hero .container::before,
+body[data-page="portal"] .page-hero .container::before,
+body[data-page="contact"] .page-hero .container::before{
+  content:none !important;
+  display:none !important;
+  background:none !important;
+  opacity:0 !important;
+  box-shadow:none !important;
+}
+
+/* One clean website-theme gradient on the LEFT side of every hero. */
+.page-hero::before,
+.home-page-hero::before,
+body[data-page="home"] .home-page-hero::before,
+body[data-page="donation"] .page-hero::before,
+body[data-page="about"] .page-hero::before,
+body[data-page="jobs"] .page-hero::before,
+body[data-page="admission"] .page-hero::before,
+body[data-page="portal"] .page-hero::before,
+body[data-page="contact"] .page-hero::before{
+  content:'' !important;
+  display:block !important;
+  position:absolute !important;
+  inset:0 auto 0 0 !important;
+  width:min(58%, 780px) !important;
+  height:100% !important;
+  z-index:1 !important;
+  pointer-events:none !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  background:linear-gradient(90deg,
+    rgba(7,49,82,.84) 0%,
+    rgba(8,76,103,.72) 28%,
+    rgba(7,145,128,.38) 56%,
+    rgba(7,145,128,.13) 78%,
+    rgba(7,145,128,0) 100%) !important;
+}
+
+/* Website font + identical typography across Home, Donation, About, Jobs,
+   Admission, Portal and Contact. */
+.page-hero .eyebrow,
+.home-page-hero .eyebrow,
+.page-hero h1,
+.home-page-hero h1,
+.page-hero p,
+.home-page-hero p{
+  font-family:inherit !important;
+}
+
+.page-hero .eyebrow,
+.home-page-hero .eyebrow{
+  font-size:.92rem !important;
+  line-height:1.25 !important;
+  font-weight:800 !important;
+  letter-spacing:.15em !important;
+  margin:0 0 10px !important;
+  color:#fff !important;
+  text-align:left !important;
+  justify-content:flex-start !important;
+}
+
+.page-hero .eyebrow::before,
+.home-page-hero .eyebrow::before{
+  background:#fff !important;
+}
+
+.page-hero h1,
+.home-page-hero h1{
+  font-size:clamp(3rem,4.25vw,4.25rem) !important;
+  line-height:1.04 !important;
+  font-weight:800 !important;
+  letter-spacing:-.035em !important;
+  max-width:590px !important;
+  margin:.24rem 0 .78rem !important;
+  color:#fff !important;
+  text-align:left !important;
+}
+
+.page-hero p,
+.home-page-hero p{
+  font-size:1.05rem !important;
+  line-height:1.55 !important;
+  font-weight:500 !important;
+  max-width:555px !important;
+  margin:0 !important;
+  color:#fff !important;
+  text-align:left !important;
+}
+
+/* Equal visual gap above and below copy on EVERY banner. */
+.page-hero .container,
+.home-page-hero .container,
+.page-hero-content,
+body[data-page="home"] .home-page-hero .container,
+body[data-page="home"] .home-page-hero .page-hero-content,
+body[data-page="donation"] .page-hero .container,
+body[data-page="about"] .page-hero .container,
+body[data-page="jobs"] .page-hero .container,
+body[data-page="admission"] .page-hero .container,
+body[data-page="portal"] .page-hero .container,
+body[data-page="contact"] .page-hero .container{
+  position:relative !important;
+  z-index:2 !important;
+  left:0 !important;
+  transform:none !important;
+  min-height:460px !important;
+  padding-top:52px !important;
+  padding-bottom:52px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  justify-content:center !important;
+  text-align:left !important;
+}
+
+/* Home: reframe the same image so the student group sits farther right. */
+body[data-page="home"] .home-page-hero{
+  background-image:url('images/school-hero-right-shift-fast.jpg') !important;
+  background-repeat:no-repeat !important;
+  background-size:106% auto !important;
+  background-position:left center !important;
+}
+
+/* Keep Home copy in a safe left column so no text/tagline sits over students. */
+body[data-page="home"] .home-page-hero .eyebrow,
+body[data-page="home"] .home-page-hero h1,
+body[data-page="home"] .home-page-hero p,
+body[data-page="home"] .home-page-hero .hero-actions,
+body[data-page="home"] .home-page-hero .hero-actions-center{
+  max-width:min(46vw, 545px) !important;
+}
+
+body[data-page="home"] .home-page-hero .hero-actions,
+body[data-page="home"] .home-page-hero .hero-actions-center,
+.page-hero .hero-actions,
+.home-page-hero .hero-actions{
+  justify-content:flex-start !important;
+  margin-top:22px !important;
+}
+
+@media (max-width:980px){
+  .page-hero::before,
+  .home-page-hero::before,
+  body[data-page="home"] .home-page-hero::before,
+  body[data-page="donation"] .page-hero::before,
+  body[data-page="about"] .page-hero::before,
+  body[data-page="jobs"] .page-hero::before,
+  body[data-page="admission"] .page-hero::before,
+  body[data-page="portal"] .page-hero::before,
+  body[data-page="contact"] .page-hero::before{
+    width:66% !important;
+    background:linear-gradient(90deg,
+      rgba(7,49,82,.84) 0%,
+      rgba(8,76,103,.70) 34%,
+      rgba(7,145,128,.30) 64%,
+      rgba(7,145,128,0) 100%) !important;
+  }
+
+  .page-hero .container,
+  .home-page-hero .container,
+  .page-hero-content,
+  body[data-page="home"] .home-page-hero .container,
+  body[data-page="home"] .home-page-hero .page-hero-content,
+  body[data-page="donation"] .page-hero .container,
+  body[data-page="about"] .page-hero .container,
+  body[data-page="jobs"] .page-hero .container,
+  body[data-page="admission"] .page-hero .container,
+  body[data-page="portal"] .page-hero .container,
+  body[data-page="contact"] .page-hero .container{
+    min-height:420px !important;
+    padding-top:46px !important;
+    padding-bottom:46px !important;
+  }
+
+  .page-hero h1,
+  .home-page-hero h1{
+    font-size:clamp(2.65rem,6vw,3.55rem) !important;
+    max-width:500px !important;
+  }
+
+  .page-hero p,
+  .home-page-hero p{
+    font-size:1rem !important;
+    max-width:490px !important;
+  }
+
+  body[data-page="home"] .home-page-hero{
+    background-size:112% auto !important;
+    background-position:left center !important;
+  }
+
+  body[data-page="home"] .home-page-hero .eyebrow,
+  body[data-page="home"] .home-page-hero h1,
+  body[data-page="home"] .home-page-hero p,
+  body[data-page="home"] .home-page-hero .hero-actions,
+  body[data-page="home"] .home-page-hero .hero-actions-center{
+    max-width:min(48vw, 470px) !important;
+  }
+}
+
+@media (max-width:620px){
+  .page-hero::before,
+  .home-page-hero::before,
+  body[data-page="home"] .home-page-hero::before,
+  body[data-page="donation"] .page-hero::before,
+  body[data-page="about"] .page-hero::before,
+  body[data-page="jobs"] .page-hero::before,
+  body[data-page="admission"] .page-hero::before,
+  body[data-page="portal"] .page-hero::before,
+  body[data-page="contact"] .page-hero::before{
+    width:82% !important;
+    background:linear-gradient(90deg,
+      rgba(7,49,82,.88) 0%,
+      rgba(8,76,103,.72) 42%,
+      rgba(7,145,128,.26) 74%,
+      rgba(7,145,128,0) 100%) !important;
+  }
+
+  .page-hero .container,
+  .home-page-hero .container,
+  .page-hero-content,
+  body[data-page="home"] .home-page-hero .container,
+  body[data-page="home"] .home-page-hero .page-hero-content,
+  body[data-page="donation"] .page-hero .container,
+  body[data-page="about"] .page-hero .container,
+  body[data-page="jobs"] .page-hero .container,
+  body[data-page="admission"] .page-hero .container,
+  body[data-page="portal"] .page-hero .container,
+  body[data-page="contact"] .page-hero .container{
+    min-height:430px !important;
+    padding-top:36px !important;
+    padding-bottom:36px !important;
+  }
+
+  .page-hero .eyebrow,
+  .home-page-hero .eyebrow{
+    font-size:.76rem !important;
+    letter-spacing:.13em !important;
+  }
+
+  .page-hero h1,
+  .home-page-hero h1{
+    font-size:2.45rem !important;
+    line-height:1.05 !important;
+    max-width:330px !important;
+  }
+
+  .page-hero p,
+  .home-page-hero p{
+    font-size:.94rem !important;
+    line-height:1.5 !important;
+    max-width:330px !important;
+  }
+
+  body[data-page="home"] .home-page-hero{
+    background-size:auto 100% !important;
+    background-position:left center !important;
+  }
+
+  body[data-page="home"] .home-page-hero .eyebrow,
+  body[data-page="home"] .home-page-hero h1,
+  body[data-page="home"] .home-page-hero p,
+  body[data-page="home"] .home-page-hero .hero-actions,
+  body[data-page="home"] .home-page-hero .hero-actions-center{
+    max-width:58vw !important;
+  }
+}
+
+/* =====================================================
+   V64 — Dark blue hero gradient only
+   Requested change: keep everything else exactly the same,
+   replace the existing blue/green gradient with a dark-blue gradient.
+   ===================================================== */
+.page-hero::before,
+.home-page-hero::before,
+body[data-page="home"] .home-page-hero::before,
+body[data-page="donation"] .page-hero::before,
+body[data-page="about"] .page-hero::before,
+body[data-page="jobs"] .page-hero::before,
+body[data-page="admission"] .page-hero::before,
+body[data-page="portal"] .page-hero::before,
+body[data-page="contact"] .page-hero::before{
+  background:linear-gradient(90deg,
+    rgba(3,24,58,.92) 0%,
+    rgba(4,38,78,.84) 30%,
+    rgba(7,65,112,.58) 58%,
+    rgba(8,82,132,.26) 78%,
+    rgba(8,82,132,0) 100%) !important;
+}
+
+@media (max-width:980px){
+  .page-hero::before,
+  .home-page-hero::before,
+  body[data-page="home"] .home-page-hero::before,
+  body[data-page="donation"] .page-hero::before,
+  body[data-page="about"] .page-hero::before,
+  body[data-page="jobs"] .page-hero::before,
+  body[data-page="admission"] .page-hero::before,
+  body[data-page="portal"] .page-hero::before,
+  body[data-page="contact"] .page-hero::before{
+    background:linear-gradient(90deg,
+      rgba(3,24,58,.92) 0%,
+      rgba(4,38,78,.82) 36%,
+      rgba(7,65,112,.50) 66%,
+      rgba(8,82,132,0) 100%) !important;
+  }
+}
+
+@media (max-width:620px){
+  .page-hero::before,
+  .home-page-hero::before,
+  body[data-page="home"] .home-page-hero::before,
+  body[data-page="donation"] .page-hero::before,
+  body[data-page="about"] .page-hero::before,
+  body[data-page="jobs"] .page-hero::before,
+  body[data-page="admission"] .page-hero::before,
+  body[data-page="portal"] .page-hero::before,
+  body[data-page="contact"] .page-hero::before{
+    background:linear-gradient(90deg,
+      rgba(3,24,58,.94) 0%,
+      rgba(4,38,78,.84) 44%,
+      rgba(7,65,112,.46) 76%,
+      rgba(8,82,132,0) 100%) !important;
+  }
+}
+
+
+/* =====================================================
+   V65 FINAL — Apply-for-Job dark-blue gradient certainty + performance polish
+   ===================================================== */
+body[data-page="jobs"] .page-hero::before{
+  content:'' !important;
+  display:block !important;
+  position:absolute !important;
+  inset:0 auto 0 0 !important;
+  width:min(58%,780px) !important;
+  height:100% !important;
+  z-index:1 !important;
+  pointer-events:none !important;
+  background:linear-gradient(90deg,
+    rgba(3,24,58,.94) 0%,
+    rgba(4,38,78,.86) 30%,
+    rgba(7,65,112,.60) 58%,
+    rgba(8,82,132,.28) 78%,
+    rgba(8,82,132,0) 100%) !important;
+}
+
+/* Reduce below-the-fold rendering work without changing the visual layout. */
+main > .section,
+main > .section-sm,
+.prefooter-cta{
+  content-visibility:auto;
+  contain-intrinsic-size:1px 700px;
+}
+
+@media (max-width:980px){
+  body[data-page="jobs"] .page-hero::before{width:66% !important;}
+}
+@media (max-width:620px){
+  body[data-page="jobs"] .page-hero::before{width:82% !important;}
+}
+
+
+/* V66 — guaranteed Apply for Job dark-blue hero gradient */
+body[data-page="jobs"] .page-hero{position:relative !important;overflow:hidden !important;}
+body[data-page="jobs"] .page-hero .job-dark-blue-gradient{
+  display:block !important;
+  position:absolute !important;
+  inset:0 auto 0 0 !important;
+  width:min(60%,800px) !important;
+  height:100% !important;
+  z-index:1 !important;
+  pointer-events:none !important;
+  background:linear-gradient(90deg,
+    rgba(3,24,58,.96) 0%,
+    rgba(4,38,78,.88) 30%,
+    rgba(7,65,112,.62) 58%,
+    rgba(8,82,132,.30) 78%,
+    rgba(8,82,132,0) 100%) !important;
+}
+body[data-page="jobs"] .page-hero .container{position:relative !important;z-index:2 !important;}
+@media(max-width:980px){body[data-page="jobs"] .page-hero .job-dark-blue-gradient{width:68% !important;}}
+@media(max-width:620px){body[data-page="jobs"] .page-hero .job-dark-blue-gradient{width:84% !important;}}

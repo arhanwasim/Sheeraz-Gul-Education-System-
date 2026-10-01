@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>School Portal | Sheeraz Gul Education System</title>
+<meta content="Choose your campus and access the Sheeraz Gul Education System school portal." name="description"/>
+<meta content="#079180" name="theme-color"/>
+<link href="assets/images/logo.png" rel="icon"/>
+<link href="assets/style.css" rel="stylesheet"/>
+<link rel="preload" as="image" href="assets/images/banner-portal-fast.jpg" fetchpriority="high"/>
+</head>
+<body data-page="portal">
+<div id="site-header"></div>
+<main id="main">
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow">School Portal</div>
+    <h1>School Portal</h1>
+    <p>Choose your campus to continue.</p><div class="hero-actions hero-actions-center"><button class="btn btn-primary" data-donate-open="">Donate Now</button><a class="btn btn-banner-secondary" href="contact-us.html">Contact Us <span data-icon="arrow"></span></a></div>
+  </div>
+</section>
+
+<section class="section portal-section">
+  <div class="container">
+    <div class="section-title center">
+      <div class="section-kicker" style="justify-content:center">Our campuses</div>
+      <h2>Choose Your School</h2>
+      <p>Select your campus to view school details or continue to the secure login interface.</p>
+    </div>
+
+    <div class="portal-school-grid">
+      <article class="portal-school-card">
+        <img class="portal-school-photo" src="assets/images/portal-nihalo-final-v5-fast.jpg" alt="Nihalo Kolhi campus"/ loading="lazy" decoding="async">
+        <div class="portal-school-content">
+          <h3>Nihalo Kolhi</h3>
+          <p>Village Nihalo Kolhi · UC Ghazi Khan Chang · Taluka Matli · District Badin</p>
+          <div class="portal-school-actions">
+            <button class="btn btn-outline" type="button" data-campus-detail="nihalo">View School</button>
+            <button class="btn btn-blue" type="button" data-portal-login="Nihalo Kolhi">Login</button>
+          </div>
+          <div class="campus-detail" hidden id="campus-detail-nihalo">Campus 1: Nihalo Kolhi, UC Ghazi Khan Chang, Taluka Matli, District Badin.</div>
+        </div>
+      </article>
+
+      <article class="portal-school-card">
+        <img class="portal-school-photo" src="assets/images/portal-pirbhu-final-v5-fast.jpg" alt="Pirbhu Bhano campus"/ loading="lazy" decoding="async">
+        <div class="portal-school-content">
+          <h3>Pirbhu Bhano</h3>
+          <p>Village Pirbhu Bhano · UC Halepota · Taluka Matli · District Badin</p>
+          <div class="portal-school-actions">
+            <button class="btn btn-outline" type="button" data-campus-detail="pirbhu">View School</button>
+            <button class="btn btn-blue" type="button" data-portal-login="Pirbhu Bhano">Login</button>
+          </div>
+          <div class="campus-detail" hidden id="campus-detail-pirbhu">Campus 2: Village Pirbhu Bhano, UC Halepota, Taluka Matli, District Badin.</div>
+        </div>
+      </article>
+
+      <article class="portal-school-card">
+        <img class="portal-school-photo" src="assets/images/portal-manzoor-final-v5-fast.jpg" alt="Manzoor Halepeto campus"/ loading="lazy" decoding="async">
+        <div class="portal-school-content">
+          <h3>Manzoor Halepeto</h3>
+          <p>Village Manzoor Halepeto · UC Halepota · Taluka Matli · District Badin</p>
+          <div class="portal-school-actions">
+            <button class="btn btn-outline" type="button" data-campus-detail="manzoor">View School</button>
+            <button class="btn btn-blue" type="button" data-portal-login="Manzoor Halepeto">Login</button>
+          </div>
+          <div class="campus-detail" hidden id="campus-detail-manzoor">Campus 3: Village Manzoor Halepeto, UC Halepota, Taluka Matli, District Badin.</div>
+        </div>
+      </article>
+
+      <article class="portal-school-card">
+        <img class="portal-school-photo" src="assets/images/portal-jameel-final-v5-fast.jpg" alt="Jameel Ahmed Arain campus near Bashir Bus Stand Tailstop"/ loading="lazy" decoding="async">
+        <div class="portal-school-content">
+          <h3>Bashir Bus Stand Tailstop</h3>
+          <p>Village Jameel Ahmed Arain · Near Bashir Bus Stand Tailstop · UC Ghazi Khan Chang · District Badin</p>
+          <div class="portal-school-actions">
+            <button class="btn btn-outline" type="button" data-campus-detail="bashir">View School</button>
+            <button class="btn btn-blue" type="button" data-portal-login="Bashir Bus Stand Tailstop">Login</button>
+          </div>
+          <div class="campus-detail" hidden id="campus-detail-bashir">Campus 4: Village Jameel Ahmed Arain, near Bashir Bus Stand Tailstop, UC Ghazi Khan Chang, Taluka Matli, District Badin.</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div aria-labelledby="portal-login-title" aria-modal="true" class="modal" hidden id="portal-login-modal" role="dialog">
+  <div class="modal-backdrop" data-portal-close></div>
+  <div class="modal-panel login-card" tabindex="-1">
+    <button aria-label="Close login" class="modal-close" data-portal-close>×</button>
+    <div class="section-kicker">School portal</div>
+    <h2 id="portal-login-title">Login to <span data-login-campus>School</span></h2>
+    <form class="form-grid">
+      <label>Username<input autocomplete="username" required/></label>
+      <label>Password<input autocomplete="current-password" required type="password"/></label>
+      <div aria-live="polite" class="form-status"></div>
+      <button class="btn btn-blue" type="submit"><span data-icon="lock"></span>Log In</button>
+      <a href="#" style="font-size:.8rem;color:#0b5085">Lost your password?</a>
+    </form>
+  </div>
+</div>
+</main>
+<div id="site-footer"></div>
+<div id="global-modal-host"></div>
+<script defer src="assets/site.js"></script>
+</body>
+</html>
